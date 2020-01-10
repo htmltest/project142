@@ -1,0 +1,31 @@
+.section_tree {
+	margin: 0;
+	padding: 0.5em;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.section_tree ul, .section_tree ol {
+	display: block;
+	list-style: none;
+	margin: 0 0 9px 25px;
+	padding: 0;
+}
+.section_tree li {
+	margin: 0;
+	list-style:none;
+}
+.section_tree ul > li::before{
+background-color:rgba(0,0,0,0);
+}
+.section_tree label {
+	display: block;
+	cursor: pointer;
+}
+.selected_tree_item {
+	margin: 0 0.5em 1em 0.5em;
+}

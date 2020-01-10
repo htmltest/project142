@@ -1,0 +1,26 @@
+.window-open .cabinet{-webkit-filter:blur(8px); -moz-filter:blur(8px); -o-filter:blur(8px); -ms-filter:blur(8px); filter:blur(8px)}
+.window {position:fixed; left:0; top:0; right:0; bottom:0; z-index:3000; overflow:auto; background:rgba(200, 200, 200, 0.9);}
+.window-container {position:absolute; top:10px; z-index:3001;width:50%;min-width:240px;left:25%;}
+.window-content {padding:20px !important;position:relative; background:#fff; box-shadow:0 7px 10px rgba(112, 86, 86, 0.15)}
+.window-close {display:block; position:absolute; width:11px; height:11px; right:18px; top:13px; background:url('../images/window-close.png')}
+.window-close:hover {background-position:left -11px}
+.window-content select,.window-content input{width:200px;}
+
+.tab .but{
+	cursor:pointer;
+background-color:#CCC;
+border:solid 1px #333;
+}
+.tab .but.active {
+	cursor:default;
+	color:#000;
+	text-decoration:none;
+	background-color:#FFFFFF;
+	border-bottom:none;
+}
+.pages .page {
+	display:none;
+}
+.pages .page.active {
+	display:block;
+}

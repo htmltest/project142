@@ -1,0 +1,46 @@
+#oldie{
+	display:block;
+	position:absolute;
+	visibility:visible;
+	width:100%;
+	height:65535px;
+	line-height:1em;
+	top:0;
+	left:0;
+	z-index:65535;
+	color:#000;
+	padding:0;
+	background-color:#ccc;
+	overflow:hidden;
+}
+#oldie div{
+	border:2px solid red;
+	padding:2em;
+	display:block;
+	position:relative;
+	top:100px;
+	width:50%;
+	margin:0 auto;
+	background-color:#fff;
+	overflow:hidden;
+}
+#oldie h3{
+	font-weight:bold;
+	font-size:150%;
+	padding:1em;
+	text-align:center;
+}
+#oldie p{
+	margin-bottom:1em;
+}
+#oldie ul{
+	margin:0 2em;
+}
+#oldie ul li{
+	list-style:disc inside;
+	margin:1em;
+	text-align:justify;
+}
+#oldie a:hover,#oldie a:active{
+	text-decoration:none;
+}
