@@ -1,6 +1,6 @@
-.wrap-cabinet {background:#f4f7f9}
+.wrap-cabinet {background:#f5f5f5}
 
-.cabinet-menu {margin:0; box-sizing:border-box; line-height:68px; height:71px; border-bottom:3px solid #ca3c33; background:#fff; box-shadow:0px 0px 20px rgba(180, 205, 220, 0.21)}
+.cabinet-menu {margin:0; box-sizing:border-box; line-height:68px; height:71px; border-bottom:3px solid #ea574e; background:#fff}
 .cabinet-menu div a {line-height:68px}
 
 @media (max-width:1020px) {
@@ -9,9 +9,9 @@
     .cabinet-menu div:last-child a {border-right:none}
 }
 
-.bread {font-size:16px; line-height:19px; color:#000; padding:0; margin:33px 0 0 0}
-.bread a {color:#585858}
-.bread a:hover {color:#0a0a0a; text-decoration:none}
+.bread {font-size:16px; line-height:19px; color:#585858; padding:0; margin:30px 0 0 0; letter-spacing:0.03em; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+.bread a {color:#000}
+.bread a:hover {color:#585858; text-decoration:none}
 .bread span {display:inline-block; vertical-align:middle; width:8px; height:13px; background:url(../images/breadcrumbs.svg) no-repeat; margin:-2px 5px 0 5px}
 
 @media (max-width:1020px) {
@@ -39,7 +39,7 @@ blockquote.time_info p b {font-weight:normal; color:#848484}
     blockquote.time_info {margin:28px 0 0 0; padding:16px 66px 14px 66px}
 }
 
-blockquote.success_info {background:rgba(120, 243, 100, 0.14); box-shadow:0px 0px 20px rgba(180, 205, 220, 0.21); border-top:none; margin:32px 0 0 0; padding:19px 29px 17px 29px; position:relative; font-size:14px; line-height:16px; color:#848484; letter-spacing:0.03em}
+blockquote.success_info {background:rgba(120, 243, 100, 0.14); border-top:none; margin:27px 0 0 0; padding:19px 29px 17px 29px; position:relative; font-size:14px; line-height:16px; color:#848484; letter-spacing:0.03em}
 blockquote.success_info > b {font-weight:normal; color:#3c3c3c; font-size:16px; line-height:19px}
 blockquote.success_info p {margin:0}
 blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
@@ -49,8 +49,8 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     blockquote.time_info {margin:28px 0 0 0; padding:16px 66px 14px 66px}
 }
 
-.entry {margin:20px 0 0 0; background:#fff; padding:25px 57px 86px 57px; box-shadow:0px 0px 20px rgba(180, 205, 220, 0.21)}
-.entry h1 {font-weight:500; font-size:28px; line-height:33px; letter-spacing:0.03em; margin:0 -57px; padding:0 57px 22px 57px; border-bottom:1px solid #e1e1e1; color:#ca3c33}
+.entry {margin:44px 0 0 0}
+.entry h1 {font-weight:normal; font-size:32px; line-height:45px; letter-spacing:0.03em; margin:0; padding:0; color:#404040}
 .riepp-request-header .profile-btn {margin-left:20px; font-weight:300; margin-top:0px}
 .riepp-request-header {margin:0 -57px; padding:0 57px 22px 57px; border-bottom:1px solid #e1e1e1}
 .entry .riepp-request-header h1 {vertical-align:middle; margin:0; padding:0; border-bottom:none; line-height: 38px; display: inline}
@@ -67,22 +67,19 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .riepp-request-header .cabinet-vacancy-link {margin:13px 0 0 0}
 }
 
-.cabinet {padding:31px 0 0 0}
+.cabinet {margin:28px 0 0 0; background:#fff; padding:30px 40px 36px 40px}
 
 @media (max-width:1020px) {
     .cabinet {padding:26px 0 0 0}
 }
 
+.table_container {margin:37px 0 0 0}
 .cabinet-content {float:none; margin:0; width:auto}
 .cabinet-content form {margin:0; padding:0}
 
-.entry .cabinet-content table {margin:0}
-.entry .cabinet-content table tr th {color:#393939; font-size:16px; font-weight:500; line-height:19px; padding:18px 20px 16px 20px; letter-spacing:0.03em; text-transform:none; background:rgba(28, 72, 163, 0.06); border:1px solid #e1e1e1}
-.entry .cabinet-content table tr th:first-child {padding-left:20px; padding-right:20px}
-.entry .cabinet-content table tr td {vertical-align:top; font-size:16px; line-height:24px; border:1px solid #e1e1e1; padding:21px 20px 22px 20px; color:#4e4e4e}
-.entry .cabinet-content table tr td:first-child {padding-left:20px; padding-right:20px}
-.entry .cabinet-content table tr td:last-child {border-right:1px solid #e1e1e1 !important}
-.cabinet-content .table_container table tr td:last-child {border-right:1px solid #e1e1e1 !important}
+.entry .cabinet-content table {margin:0; width:100%}
+.entry .cabinet-content table tr th {color:#000; font-size:15.5px; font-weight:500; line-height:19px; padding:17px 30px 15px 30px; text-transform:none; background:rgba(252, 234, 231, 0.5); border:1px solid #e1e1e1; white-space:nowrap}
+.entry .cabinet-content table tr td {vertical-align:top; font-size:15.5px; line-height:19px; border:1px solid #e1e1e1; padding:15px 30px 13px 30px; color:#393939}
 .entry .cabinet-content table tr td .lab3 {padding:0; line-height:24px; color:#4e4e4e}
 .entry .cabinet-content table.table_profile tr td {vertical-align:middle}
 
@@ -171,7 +168,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .pager {margin:60px 0 0 0}
 .pager::after {content:""; display:block; clear:both}
 .pager-prev,
-.pager-next {float:left; width:36px; height:36px; border:1px solid #b0bfdf; position:relative; box-sizing:border-box}
+.pager-next {float:left; width:43px; height:43px; border:1px solid #f9d2cf; position:relative; box-sizing:border-box}
 .pager-prev {margin:0 20px 0 0}
 .pager-next {margin:0 0 0 20px}
 .pager-prev.disabled,
@@ -188,9 +185,9 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .pager-next.disabled rect {fill:#bdbdbd}
 .pager-content {float:left; margin:0 1px 0 0 0}
 .pager-content a,
-.pager-content span {float:left; width:36px; height:36px; border:1px solid #b0bfdf; margin:0 -1px 0 0; text-align:center; line-height:34px; color:#2f2f2f; box-sizing:border-box; font-size:14px}
-.pager-content a:hover {position:relative; z-index:1; text-decoration:none; background:#d8e4f8}
-.pager-content a.active {background:rgba(28, 72, 163, 0.06)}
+.pager-content span {float:left; width:43px; height:43px; border:1px solid #f9d2cf; margin:0 -1px 0 0; text-align:center; line-height:41px; color:#2f2f2f; box-sizing:border-box; font-size:14px}
+.pager-content a:hover {position:relative; z-index:1; text-decoration:none; color:#ea574e; background:#fbeeec}
+.pager-content a.active {background:#fceae7}
 
 @media (max-width:1020px) {
     .pager {margin:40px 0 0 0; text-align:center}
@@ -227,7 +224,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .cabinet-riepp-requests-score-no {height:39px}
 }
 
-.cabinet-riepp-requests-status {display:inline-block; vertical-align:top; height:29px; font-size:16px; line-height:29px; padding:0 12px; border-radius:4px}
+.cabinet-riepp-requests-status {display:inline-block; vertical-align:top; height:29px; font-size:16px; line-height:29px; padding:0 15px; border-radius:4px}
 .cabinet-riepp-requests-status-1 {background:rgba(255, 46, 46, 0.6); color:#fff}
 .cabinet-riepp-requests-status-2 {background:rgba(249, 239, 17, 0.5); color:#3a3a3a}
 .cabinet-riepp-requests-status-3 {background:rgba(120, 243, 100, 0.6); color:#3a3a3a}
@@ -238,10 +235,11 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 }
 
 .profile-value {font-weight:500}
-.profile-btn {display:inline-block; vertical-align:top; height:39px; background:rgba(234,87 , 78, 0.1); padding:0 15px; color:#4e4e4e; font-weight:300; font-size:14px; line-height:39px}
-.profile-btn::before {content:""; display:inline-block; vertical-align:middle; width:13px; height:13px; background:url(../images/profile-btn.svg) no-repeat; margin:-2px 9px 0 0}
-.profile-btn:hover {text-decoration:none; color:#0a0a0a; background:#f8c3bb}
-.profile-btn:active {text-decoration:none; color:#0a0a0a; background:rgba(234,87 , 78, 0.05)}
+.profile-btn {display:inline-block; margin:0 6px 0 0; vertical-align:top; height:43px; box-sizing:border-box; background:transparent; padding:0 31px 0 16px; color:#4e4e4e; font-weight:normal; font-size:16px; line-height:41px; border:1px solid #ea574e; border-radius:3px}
+.profile-btn::before {content:""; display:inline-block; vertical-align:middle; width:14px; height:14px; background:url(../images/profile-btn.svg) no-repeat; margin:-2px 12px 0 0}
+.profile-btn-edit {margin-left:30px; padding:0 19px}
+.profile-btn-edit::before {width:13px; height:13px; background:url(../images/profile-btn-edit.svg) no-repeat; margin:-2px 9px 0 0}
+.profile-btn:hover {text-decoration:none; color:#ea574e; background:#fbeeec}
 
 .cabinet-expert-requests-score {font-size:18px; font-weight:500; line-height:27px; padding:0 0 0 24px; width:100px; text-align:left; box-sizing:border-box; background:url(../images/cabinet-expert-requests-score.svg) no-repeat left 5px; color:#2f2f2f}
 
@@ -297,12 +295,13 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .entry .center-request-confirm-form .form_sub {display:block; margin:25px 0 0 0; width:100%; max-width:none}
 }
 
-.expert-request-header {margin:37px 0 0 0; position:relative; padding:0 0 0 35px}
-.expert-request-header-back {display:block; position:absolute; left:0; top:5px}
+.expert-request-header {margin:44px 0 0 0; position:relative; padding:0 0 0 35px}
+.expert-request-header-back {display:block; position:absolute; left:0; top:10px}
 .expert-request-header-back svg {display:block}
-.expert-request-header-back path {fill:#1c48a3}
-.expert-request-header-back:hover path {fill:rgba(29, 54, 180, 0.5)}
+.expert-request-header-back path {fill:#ea574e}
+.expert-request-header-back:hover path {fill:#000}
 .expert-request-header-title {font-weight:normal; font-size:28px; line-height:33px; color:#404040; letter-spacing:0.03em}
+.expert-request-header h1 {font-weight:normal; font-size:32px; line-height:45px; margin:0; padding:0; letter-spacing:0.03em; color:#404040}
 .expert-request-header-info {margin:12px 0 0 0}
 .expert-request-header-info::after {content:""; display:block; clear:both}
 .expert-request-header-info-request {float:left; font-size:16px; line-height:19px; letter-spacing:0.03em; font-weight:normal; color:#1a1919}
@@ -318,9 +317,9 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .expert-request-header-info-status .cabinet-riepp-requests-status {position:relative; left:auto; top:auto}
 }
 
-.request_tabs {margin:44px 0 0 0; padding:0; border-bottom:3px solid #e2e2e2; font-size:16px; line-height:24px; font-weight:normal}
-.request_tabs ul{font-size: 1.2em;}
-.request_tabs ul li {margin:0 0 0 44px; color:#999; padding:0 0 11px 0}
+.request_tabs {margin:72px 0 -8px 0; padding:0; border-bottom:3px solid #e2e2e2; font-size:16px; line-height:24px; font-weight:normal}
+.request_tabs ul{}
+.request_tabs ul li {margin:0 0 0 40px; color:#999; padding:0 0 11px 0}
 .request_tabs ul li:first-child {margin:0}
 .request_tabs ul li.active {font-weight:500; color:#ea574e}
 .request_tabs ul li.active::after {background:#ea574e}
@@ -656,3 +655,51 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .entry .expert-request-score-window-ctrl .btn.btn_sm.red:active {background:#1d36b4; color:#fff}
 
 .entry .cabinet-content .table-title{font-size: 1.2em}
+
+.cabinet-content-header {padding:23px 0 0 0}
+.cabinet-content-header:first-child {padding:10px 0 0 0}
+.cabinet-content-header::after {content:""; display:block; clear:both}
+.cabinet-content-header h2 {float:left; margin:15px 0 0 0; padding:0; font-weight:500; font-size:24px; line-height:28px; color:#ea574e; letter-spacing:0.03em}
+.cabinet-content-header:first-child h2 {margin:6px 0 0 0}
+.cabinet-content-header .pager {float:right; margin:0}
+.cabinet-content-header-btn {float:left}
+
+.entry .cabinet-content table tr td.cabinet-projects-list-title {font-size:18px; line-height:25px; padding:31px 30px 21px 30px; border-bottom:none}
+.entry .cabinet-content table tr td.cabinet-projects-list-title a {color:#d52e23}
+.entry .cabinet-content table tr:hover td.cabinet-projects-list-title {background:transparent}
+.entry .cabinet-content table tr.cabinet-projects-list-props td {border-top:none; border-bottom:none; padding-top:0; padding-bottom:30px; color:#737373; line-height:21px; position:relative}
+.entry .cabinet-content table tr.cabinet-projects-list-props td:nth-child(1) {white-space:nowrap}
+.entry .cabinet-content table tr.cabinet-projects-list-props td::before {content:""; display:block; position:absolute; left:-1px; bottom:0; width:1px; height:30px; background:#fff}
+.entry .cabinet-content table tr.cabinet-projects-list-props td:first-child::before {display:none}
+.entry .cabinet-content table tr.cabinet-projects-list-props:hover td {background:transparent}
+
+.entry .cabinet-content .table_container_detail table td {line-height:24px; color:#141414; padding-top:15px; padding-bottom:13px}
+.entry .cabinet-content .table_container_detail table td:first-child {width:40%; color:#555; line-height:19px; padding-top:17px; padding-bottom:15px}
+
+.entry .cabinet-content table.table-profile-dashboard td {padding-top:20px; padding-bottom:18px}
+.entry .cabinet-content table.table-profile-dashboard td:last-child {padding-top:15px; padding-bottom:13px}
+
+.entry .cabinet-content table.table_edit td {line-height:24px; color:#141414; padding:20px 30px}
+.entry .cabinet-content table.table_edit td:first-child {width:40%; color:#555; padding:30px}
+
+.cabinet-list-item-del {display:inline-block; vertical-align:middle; width:22px; height:22px; background:url(../images/btn-remove.svg) no-repeat; margin:0 13px 0 0}
+.cabinet-list-item-edit {display:inline-block; vertical-align:middle; width:22px; height:22px; background:url(../images/btn-edit.svg) no-repeat; margin:0 13px 0 0}
+
+.table_edit .riepp-request-affiliated-select {width:406px}
+.table_edit .riepp-request-affiliated-select-value {background:rgba(234, 87, 78, 0.04); box-sizing:border-box; height:39px; border:1px solid rgba(234, 87, 78, 0.42); color:#000; padding:7px 57px 6px 12px; font:300 16px/24px Roboto, sans-serif}
+.table_edit .riepp-request-affiliated-select-value::after {right:19px; top:15px}
+.table_edit .riepp-request-affiliated-select-list {border:1px solid #d7d7d7; box-shadow:0px 4px 40px rgba(89, 89, 89, 0.1)}
+.table_edit .riepp-request-affiliated-select-list label {border-color:#d7d7d7}
+.table_edit .riepp-request-affiliated-select-list label span {font-size:16px; line-height:19px; color:#717171; padding:16px 45px 17px 20px; height:auto; font-weight:normal}
+.table_edit .riepp-request-affiliated-select-list label input:checked+span {background:rgba(249, 210, 207, 0.25); color:#000; font-weight:normal}
+.table_edit .riepp-request-affiliated-select-list label input:checked+span::after {right:10px; top:14px; width:25px; height:25px; border:1px solid #ea574e; border-radius:50%; background:url(../images/window-checked.svg) no-repeat center; margin:0}
+.table_edit .riepp-request-affiliated-select-list label input[type="radio"]:checked+span::after {display:none}
+
+.table_edit .inp {background:rgba(234, 87, 78, 0.04); height:39px; box-sizing:border-box; width:406px; border:1px solid rgba(234, 87, 78, 0.42); color:#000; padding:7px 12px 6px 12px; font:300 16px/24px Roboto, sans-serif}
+.input-date {display:block; position:relative; width:161px}
+.table_edit .input-date .inp {width:100%; padding-right:45px}
+.input-date::after {content:""; display:bock; position:absolute; right:20px; top:11px; width:15px; height:15px; background:url(../images/input-date.svg) no-repeat; pointer-events:none}
+
+.tabs .cabinet-content {position:relative}
+.tabs__content {width:100%; position:absolute; left:-9999px; top:-9999px; opacity:0; transition:opacity 0.3s}
+.tabs__content.active {position:relative; left:auto; top:auto; opacity:1}

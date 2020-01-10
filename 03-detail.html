@@ -56,18 +56,23 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 		<link rel="stylesheet" href="bitrix/templates/funds3_lk/css/lteie8.css" media="all" />
 	<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-	
+
                 <link rel="stylesheet" href="local/layout/lk/css/style.template.css?83442" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?10980" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?16790" />
-        <link rel="stylesheet" href="local/layout/lk/css/win.css?21640" />
-	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?56743" />
-	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?70564" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?55726" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?20832" />
+        <link rel="stylesheet" href="local/layout/lk/css/win.css?30980" />
+	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?36330" />
+	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?41745" />
+        <link rel="stylesheet" href="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="local/layout/lk/js/air-datepicker/datepicker.css" />
+        <script src="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="local/layout/lk/js/mask/jquery.mask.min.js"></script>
+        <script src="local/layout/lk/js/air-datepicker/datepicker.min.js"></script>
 				<script src="local/layout/lk/js/tree.js"></script>
 		<script src="local/layout/lk/js/win.js"></script>
 		<script src="local/layout/lk/js/change_pass.js"></script>
 		<script src="local/layout/lk/js/popups.js"></script>
-    
+
 </head>
 <body id="top">
 	<div id="panel"></div>
@@ -76,24 +81,15 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 
 			<div class="top">
 				<div class="wrap">
-					<div class="logo"><a href="/"><img src="local/layout/images/logo.png" /></a></div><div class='slogan'>Личный кабинет научного фонда</div>
+					<div class="logo"><a href="/"><img src="local/layout/lk/images/logo.png" /></a></div><div class='slogan'><span>Реестр фондов</span> поддержки научной, научно-технической, инновационной деятельности</div>
 					<span class="show_nav"><span></span></span>
-										<div class="top_user">
-						<a href="/personal/">Кирилл Калюжный (fund_user)</a>
-						<ul>
-							<li><a href="/personal/profile/">Профиль</a></li>
-							<li><a href="/personal/contest/">Конкурсы</a></li>
-							<li><a href="/personal/project/">Конкурсные проекты</a></li>
-							<li><a href="/personal/participant/">Участники</a></li>
-							<li class="top_user_out"><a href="/index.php?logout=yes">Выход</a></li>
-						</ul>
-					</div>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</header>
 		<div class="wrap">
 			<section id="content"><div class="cabinet-menu">
+	<div><a href="#">Рабочий стол</a></div>
 	<div><a href="/personal/profile/">Профиль</a></div>
 	<div><a href="/personal/contest/">Конкурсы</a></div>
 	<div class="active"><a href="/personal/project/">Конкурсные проекты</a></div>
@@ -102,27 +98,33 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 </div>
 
 <div class="bread">
-				<a href="/" title="Российский научный фонд" >Российский научный фонд</a> <span></span> 
-				<a href="/personal/" title="Личный кабинет" >Личный кабинет</a> <span></span> 
+				<a href="/" title="Национальный благотворительный фонд" >Национальный благотворительный фонд</a> <span></span>
 				<a href="/personal/project/" title="Конкурсные проекты" >Конкурсные проекты</a> <span></span> Очень динамичный проект, который должен затмить всех предшественников</div>
 <div class="back-mobile"><a href="/personal/project/"><span><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z" /></svg></span>Конкурсные проекты</a></div>
 <div class="entry">
-	<div class="riepp-request-header">
-		<h1>Очень динамичный проект, который должен затмить всех предшественников</h1>
-		<a href="edit.php?id=675396" class='profile-btn'>Редактировать</a>
-	</div>
+    <div class="expert-request-header">
+        <a href="index.php" class="expert-request-header-back"><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z"></path></svg></a>
+        <h1>Очень динамичный проект, который должен затмить всех предшественников</h1>
+    </div>
+<blockquote class='success_info'>
+<b>Спасибо, </b><br />
+<p>ваша заявка от 18.06.2019 18:40:03 принята! Заявке присвоен номер <b>NCMU_4_1</b></p>
+<a href="#" class="success_info-close"></a>
+</blockquote>
 	<div class="cabinet">
 		<div class="cabinet-container">
 			<div class="cabinet-content">
-						
-				<div class="table_container">
-				<table class="table_no_rb" border="0" width="100%" cellspacing="0" cellpadding="0">
-				<thead>
-				<tr>
-					<th width="40%">Название</th>
-					<th width="">Значение</th>
-				</tr>
-				</thead>
+
+                <div class="cabinet-content-header cabinet-content-header-detail">
+                    <h2>Карточка проекта</h2>
+                    <div class="cabinet-content-header-btn">
+                        <a href="edit.php?id=675396" class='profile-btn profile-btn-edit'>Редактировать</a>
+                    </div>
+                </div>
+
+				<div class="table_container table_container_detail">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+                <tbody>
 					<tr>
 						<td>Конкурс</td>
 						<td>Новый и динамично развивающийся конкурс						</td>
@@ -164,10 +166,14 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 						<td>Инструмент поддержки</td>
 						<td>- стипендия<br>- премия<br>- грант<br></td>
 					</tr>
+                </tbody>
 
 				</table>
 				</div>
-				<br />
+            </div>
+        </div>
+    </div>
+
 				<div class="tabs">
 					<div class='request_tabs'>
 						<ul class="tabs__caption">
@@ -176,25 +182,47 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 							<li>Результаты проекта</li>
 						</ul>
 					</div>
+
+	<div class="cabinet">
+		<div class="cabinet-container">
+			<div class="cabinet-content">
+
 					<div class="tabs__content active">
-						<div style='margin: 30px 0'><a href="windows/people.html"  class='profile-btn window-link'>Прикрепить участника</a></div>
-						<span class="people-upd">
-						
+                        <div class="cabinet-content-header">
+                            <div class="cabinet-content-header-btn">
+                                <a href="windows/people.html"  class='profile-btn window-link'>Прикрепить участника</a>
+                            </div>
+                            <div class="pager">
+                                <div class="pager-content">
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <span>...</span>
+                                    <a href="#">13</a>
+                                    <a href="#">14</a>
+                                    <a href="#">15</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_container">
+                        <div class="people-upd">
+
 			<table>
 			<tr>
 				<th>ФИО</th>
 				<!--<th>Идентификатор ORCID</th>-->
 				<th>Статус</th>
 				<th>Тип участия</th>
-				<th></th>
+				<th>Управление</th>
 			</tr>
-		
+
 			<tr>
 				<td><a href="../participant/detail.php?id=675419">Ахметзянова Орхидея Степановна</a></td>
 				<!--<td>0000-0002-9075-5102</td>-->
 				<td>студент</td>
 				<td>руководитель</td>
-				<td><a href="del.php?del_p=676774&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;">Отвязать от проекта</a></td>
+				<td><a href="del.php?del_p=676774&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
 
 			</tr>
 			<tr>
@@ -202,7 +230,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 				<!--<td>0000-0002-5559-7777</td>-->
 				<td>иной</td>
 				<td>руководитель</td>
-				<td><a href="del.php?del_p=676751&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;">Отвязать от проекта</a></td>
+				<td><a href="del.php?del_p=676751&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
 
 			</tr>
 			<tr>
@@ -210,7 +238,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 				<!--<td>0000-0002-5559-6666</td>-->
 				<td>иной</td>
 				<td>руководитель</td>
-				<td><a href="del.php?del_p=676775&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;">Отвязать от проекта</a></td>
+				<td><a href="del.php?del_p=676775&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
 
 			</tr>
 			<tr>
@@ -218,7 +246,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 				<!--<td>1234-4321-00</td>-->
 				<td>студент</td>
 				<td>руководитель</td>
-				<td><a href="del.php?del_p=676757&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;">Отвязать от проекта</a></td>
+				<td><a href="del.php?del_p=676757&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
 
 			</tr>
 			<tr>
@@ -226,15 +254,33 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 				<!--<td>0000-0002-5559-3722</td>-->
 				<td>аспирант</td>
 				<td>исполнитель</td>
-				<td><a href="del.php?del_p=676599&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;">Отвязать от проекта</a></td>
+				<td><a href="del.php?del_p=676599&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
 
-			</tr>	</table>						</span>
+			</tr>	</table>						</div>
+					</div>
 					</div>
 
 					<div class="tabs__content">
-						<div style='margin: 30px 0'><a href="windows/finance.html"  class='profile-btn window-link'>Добавить финансирование</a></div>
-						<span class="finance-upd">
-						
+                        <div class="cabinet-content-header">
+                            <div class="cabinet-content-header-btn">
+                                <a href="windows/finance.html"  class='profile-btn window-link'>Добавить финансирование</a>
+                            </div>
+                            <div class="pager">
+                                <div class="pager-content">
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <span>...</span>
+                                    <a href="#">13</a>
+                                    <a href="#">14</a>
+                                    <a href="#">15</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_container">
+						<div class="finance-upd">
+
 		<table>
 		<tr>
 			<th>Год отчетности</th>
@@ -242,24 +288,42 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 			<th>Управление</th>
 		</tr>
 	<tr><td>2020</td><td>1231231231231 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676765" class="window-link">редактировать</a>  
+		<a href="finance.php?id=675396&edit=676765" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676765" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;">удалить</a></td></tr><tr><td>2019</td><td>234 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676766" class="window-link">редактировать</a>  
+		<a href="del.php?id=675396&del_f=676765" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2019</td><td>234 тыс. рублей</td><td>
+		<a href="finance.php?id=675396&edit=676766" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676766" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;">удалить</a></td></tr><tr><td>2018</td><td>223442342 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676729" class="window-link">редактировать</a>  
+		<a href="del.php?id=675396&del_f=676766" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2018</td><td>223442342 тыс. рублей</td><td>
+		<a href="finance.php?id=675396&edit=676729" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676729" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;">удалить</a></td></tr><tr><td>2017</td><td>220 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676732" class="window-link">редактировать</a>  
+		<a href="del.php?id=675396&del_f=676729" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2017</td><td>220 тыс. рублей</td><td>
+		<a href="finance.php?id=675396&edit=676732" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676732" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;">удалить</a></td></tr></table>						</span>
+		<a href="del.php?id=675396&del_f=676732" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr></table>						</div>
 					</div>
-					
+					</div>
+
 					<div class="tabs__content">
-						<div style='margin: 30px 0'><a href="windows/res.html"  class='profile-btn window-link'>Добавить результаты</a></div>
-						<span class="res-upd">
-						
+                        <div class="cabinet-content-header">
+                            <div class="cabinet-content-header-btn">
+                                <a href="windows/res.html"  class='profile-btn window-link'>Добавить результаты</a>
+                            </div>
+                            <div class="pager">
+                                <div class="pager-content">
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <span>...</span>
+                                    <a href="#">13</a>
+                                    <a href="#">14</a>
+                                    <a href="#">15</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_container">
+						<div class="res-upd">
+
 <script>
 		jQuery(document).ready(function($) {
 		$("body").on("click","span.res-upd pager a", function(e){
@@ -285,24 +349,16 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 		<th>Управление</th>
 	</tr>
 <tr><td>2019</td><td>- заявка на регистрацию базы данных<br></td><td>345345</td><td>
-	<a href="res.php?id=675396&edit=676836" class="window-link">редактировать</a>  
-	
-	<a href="del.php?id=675396&del_r=676836" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;">удалить</a></td></tr><tr><td>2018</td><td>- заявка на регистрацию базы данных<br>- заявка на регистрацию изобретения<br></td><td>56756756</td><td>
-	<a href="res.php?id=675396&edit=676837" class="window-link">редактировать</a>  
-	
-	<a href="del.php?id=675396&del_r=676837" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;">удалить</a></td></tr></table>						</span>
+	<a href="res.php?id=675396&edit=676836" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+
+	<a href="del.php?id=675396&del_r=676836" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2018</td><td>- заявка на регистрацию базы данных<br>- заявка на регистрацию изобретения<br></td><td>56756756</td><td>
+	<a href="res.php?id=675396&edit=676837" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+
+	<a href="del.php?id=675396&del_r=676837" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr></table>						</div>
+    </div>
 					</div>
 
 				</div><!-- .tabs-->
-
-			<style>
-			.tabs__content {
-			  display: none;
-			}
-			.tabs__content.active {
-			  display: block;
-			}
-			</style>
 
 			</div>
 		</div>
@@ -313,23 +369,60 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 	</div></div>
 
 	<footer>
+        <div class="footer-logos">
+            <div class="wrap">
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-01.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-02.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-03.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-04.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-05.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-06.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-07.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-08.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-09.png" alt="" /></a></div>
+            </div>
+        </div>
 		<div class="wrap">
-			<div class="logo_bot"><img src="local/layout/images/gerb.png" /></div>
-			<div class="copy">
-				Реестр разработан при поддержке <a href="https://minobrnauki.gov.ru/" target="_blank">Минобрнауки России</a>
-				<div class="bot_tel"></div>
-			</div>
-		<span class="show_bot_nav"><span></span></span>
-		<div class="clear show760"></div>
-			<nav class="nav_bot">
+			<div class="footer-text">
+                <div class="footer-assistance">Реестр разработан при поддержке Минобрнауки России.</div>
+                <div class="footer-copy">© Реализация и сопровождение: ФГБУ "РИЭПП".</div>
+            </div>
+            <div class="footer-informer">
+                <!-- Yandex.Metrika informer -->
+                <a href="https://metrika.yandex.ru/stat/?id=44200049&amp;from=informer"
+                target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44200049/3_0_EFEFEFFF_EFEFEFFF_0_pageviews"
+                style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44200049" data-lang="ru" /></a>
+                <!-- /Yandex.Metrika informer -->
 
-			</nav>
-			<nav class="nav_bot nav_bot2">
+                <!-- Yandex.Metrika counter -->
+                <script type="text/javascript">
+                    (function (d, w, c) {
+                        (w[c] = w[c] || []).push(function() {
+                            try {
+                                w.yaCounter44200049 = new Ya.Metrika({
+                                    id:44200049,
+                                    clickmap:true,
+                                    trackLinks:true,
+                                    accurateTrackBounce:true
+                                });
+                            } catch(e) { }
+                        });
 
-			</nav>
-			<nav class="nav_bot nav_bot3">
+                        var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () { n.parentNode.insertBefore(s, n); };
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-			</nav>
+                        if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f, false);
+                        } else { f(); }
+                    })(document, window, "yandex_metrika_callbacks");
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/44200049" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                <!-- /Yandex.Metrika counter -->
+            </div>
 			<div class="clear"></div>
 		</div>
 	</footer>

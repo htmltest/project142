@@ -11,14 +11,14 @@
 .nav_top > ul > li.sub_nav.active > a:before{background-position: 0px -14px;}
 
 
-.top_user ul{font-size: 15px;padding: 5px 21px;}    
+.top_user ul{font-size: 15px;padding: 5px 21px;}
 
 .faq-list h3{padding-top: 20px;}
 .faq-list hr{margin-top: 10px;}
 
-.cabinet-menu {float:left; width:263px; line-height:24px; margin:20px 0 0 0; font-size: 16px;}
+.cabinet-menu {font-size:16px}
 .cabinet-menu ul {margin:0; padding:0; list-style:none}
-.cabinet-menu ul li {margin:18px 0; padding:0; position:relative}
+.cabinet-menu ul li {margin:0; padding:0; position:relative}
 .cabinet-menu ul li:before {display:none}
 .cabinet-menu ul li:after {content:""; display:block; clear:both}
 .cabinet-menu ul li a {display:block; float:left; text-decoration:none; position:relative; color: #0f295f}
@@ -50,7 +50,7 @@ blockquote.time_info{ padding: 20px 50px; border-top: 5px solid #f5d008; backgro
 .cabinet-content table tr th{color: #ababab; font-size: 14px; font-weight: 700;}
 
 .request_tabs{ margin: 10px 0 30px 0; font-size: 20px; border-bottom: 3px solid #e8e8e8; padding: 9px 0 0 0; }
-.request_tabs ul{ margin: 0; padding: 0; list-style: none; } 
+.request_tabs ul{ margin: 0; padding: 0; list-style: none; }
 .request_tabs ul:after {content:""; display:block; clear:both}
 .request_tabs ul li {float:left; margin:0 0 0 44px; padding:0; position:relative; cursor:pointer}
 .request_tabs ul li:first-child {margin:0}
@@ -67,8 +67,9 @@ blockquote.time_info{ padding: 20px 50px; border-top: 5px solid #f5d008; backgro
 .doc_list_r{margin: 0}
 
 .cabinet-menu{float:none; width: auto; height: 65px; background-color: #f4f7f9; border-bottom: 3px #1c48a3 solid;}
-.cabinet-menu div {display: inline-block;}
-.cabinet-menu div a{display: inline-block; line-height: 65px; padding: 0 25px; border-right: 1px #e1e1e1 solid; color: #999999; text-decoration: none}
+.cabinet-menu::after {content:""; display:block; clear:both}
+.cabinet-menu div {float:left; border-right:1px #e1e1e1 solid}
+.cabinet-menu div a{display:block; line-height: 65px; padding: 0 40px; color: #999999; text-decoration: none}
 .cabinet-menu div a:hover{color: #ca3c33}
 .cabinet-menu .active a{color: #ca3c33; font-weight: 500}
 

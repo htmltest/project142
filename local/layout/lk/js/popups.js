@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
 
     window.setInterval(function() {
-        $('.window .riepp-request-affiliated-select-list').each(function() {
+        $('.window .riepp-request-affiliated-select-list, .table_edit .riepp-request-affiliated-select-list').each(function() {
             var curList = $(this);
             curList.mCustomScrollbar({
                 axis: 'y'

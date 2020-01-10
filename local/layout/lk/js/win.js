@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	
+
 	$('.top_user').hover(
 	function() {
 		$(this).find('ul').fadeIn(100);
@@ -7,13 +7,13 @@ jQuery(document).ready(function($) {
 	function() {
 		$(this).find('ul').fadeOut(100);
 	});
-	
+
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 		$(this)
 		.addClass('active').siblings().removeClass('active')
 		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 	});
-	
+
 	// Табы
 	$('body').on('click','.tab .but:not(.active)', function(e){
 	 var ind=$(this).index();
@@ -21,9 +21,9 @@ jQuery(document).ready(function($) {
 		$('div.pages').find('div.page').removeClass('active').eq($(this).index()).addClass('active');
 	});
 
-		
+
 	$('body').on('click','.window-link', function(e){
-		windowOpen($(this).attr('href')); 
+		windowOpen($(this).attr('href'));
 		return false;
 	});
 
@@ -39,8 +39,8 @@ jQuery(document).ready(function($) {
   }
 
 		});
-*/		
-		windowOpen($(this).attr('action')+'?'+$(this).serialize()); 
+*/
+		windowOpen($(this).attr('action')+'?'+$(this).serialize());
 		return false;
 	});
 
@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 		var select_ok=false;
 		$(this).find('input:checked.required').each(function( index ) {
 		if ($(this).prop('checked'))select_ok=true;
-		
+
 		});
 		if(!select_ok){$(this).find('.riepp-request-affiliated-select-value').html('<font color="red">Выберите значение!</font>');
 		form_ok=false;
@@ -61,12 +61,12 @@ jQuery(document).ready(function($) {
 			return false;
 		}
 
-		windowOpenFile(this); 
+		windowOpenFile(this);
 		return false;
 	});
 
 	$('form').on('submit', function(e){
-		
+
 		if($(this).find('input[name="orchid"]').val())
 		{
 			orchid_ok=false;
@@ -79,17 +79,17 @@ jQuery(document).ready(function($) {
            async: false,
             success: function(res) {
 			if(res=='1')orchid_ok=true;
-			
+
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown)
 			{
             //$('#text').val('ERROR'+ XMLHttpRequest +" "+ errorThrown)
             //alert(textStatus);
 			//alert('ERROR'+ XMLHttpRequest +" "+ errorThrown);},
-        
+
 			}
 			});
-			
+
 		if (!orchid_ok)
 		{
 			alert('Неверный ORCHID');
@@ -133,20 +133,112 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('body').on('click', '.window-close', function(e) {
+        windowClose();
+        e.preventDefault();
+    });
+
+    $('body').on('keyup', function(e) {
+        if (e.keyCode == 27) {
+            windowClose();
+        }
+    });
+
+    $('body').on('mousedown', '.window', function(e) {
+        if (e.target !== this) {
+            $('.window').data('mousedown', false);
+        } else {
+            $('.window').data('mousedown', true);
+        }
+    });
+
+    $('body').on('mouseup', '.window', function(e) {
+        if (e.target !== this) {
+            $('.window').data('mousedown', false);
+        } else {
+            if ($('.window').data('mousedown')) {
+                windowClose();
+            }
+        }
+    });
+    
+    $('.input-date input').attr('autocomplete', 'off');
+    $('.input-date input').mask('00.00.0000');
+
+    $('.input-date input').on('change', function() {
+        var curValue = $(this).val();
+        if (curValue.match(/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/)) {
+            var myDatepicker = $(this).data('datepicker');
+            if (myDatepicker) {
+                var curValueArray = curValue.split('.');
+                myDatepicker.selectDate(new Date(Number(curValueArray[2]), Number(curValueArray[1]) - 1, Number(curValueArray[0])));
+            }
+        } else {
+            var myDatepicker = $(this).data('datepicker');
+            if (myDatepicker) {
+                myDatepicker.clear();
+            }
+        }
+    });
+
+    $('.input-date input').on('keyup', function() {
+        var curValue = $(this).val();
+        if (curValue.match(/^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$/)) {
+            var myDatepicker = $(this).data('datepicker');
+            if (myDatepicker) {
+                var curValueArray = curValue.split('.');
+                myDatepicker.selectDate(new Date(Number(curValueArray[2]), Number(curValueArray[1]) - 1, Number(curValueArray[0])));
+                myDatepicker.show();
+                $(this).focus();
+            }
+        }
+    });
+
+    $('.input-date input').each(function() {
+        var startDate = new Date();
+        if (typeof ($(this).attr('value')) != 'undefined') {
+            var curValue = $(this).val();
+            if (curValue != '') {
+                var startDateArray = curValue.split('.');
+                startDate = new Date(Number(startDateArray[2]), Number(startDateArray[1]) - 1 , Number(startDateArray[0]));
+            }
+        }
+        $(this).datepicker({
+            language: 'ru',
+            startDate: startDate,
+            autoClose: true,
+            toggleSelected: false
+        });
+        if (typeof ($(this).attr('value')) != 'undefined') {
+            var curValue = $(this).val();
+            if (curValue != '') {
+                var startDateArray = curValue.split('.');
+                startDate = new Date(Number(startDateArray[2]), Number(startDateArray[1]) - 1 , Number(startDateArray[0]));
+                $(this).data('datepicker').selectDate(startDate);
+            }
+        }
+    });
+
+
+    $('.success_info-close').click(function(e) {
+        $(this).parent().fadeOut();
+        e.preventDefault();
+    });
+
 });//jQuery
 
 function upd_span(href, name){
     jQuery(document).ready(function($) {
-		$.ajax({            
-			type: "POST",            
-			url: href,            
-			dataType: "html",            
-			cache: false,            
-			async: true,            
-			success: function(res) {				
-			$("body").find("span."+name).html(res);			
-			}		
-		});	
+		$.ajax({
+			type: "POST",
+			url: href,
+			dataType: "html",
+			cache: false,
+			async: true,
+			success: function(res) {
+			$("body").find("span."+name).html(res);
+			}
+		});
 	});
 	return false;
 };
@@ -162,7 +254,7 @@ function windowOpen(data_ckp) {
             async: true,
             success: function(res) {
                 html='<div class="analitics">'+res+'</div>';
-                
+
                 $('html').addClass('window-open');
 
                 if ($('.window').length > 0) {
@@ -196,23 +288,6 @@ function windowOpen(data_ckp) {
                 console.log('Error: ' + jqXHR['statusText']);
                 }
         });//ajax
-
-        $('body').on('click', '.window-close', function(e) {
-            windowClose();
-            e.preventDefault();
-        });
-
-        $('body').on('keyup', function(e) {
-            if (e.keyCode == 27) {
-                windowClose();
-            }
-        });
-
-        $(document).mousedown(function(e) {
-            if ($(e.target).hasClass('window')) {
-                windowClose();
-            }
-        });
     });//jQuery
 }
 
@@ -222,7 +297,7 @@ function windowOpenFile(data_ckp) {
 //		alert($(data_ckp).parent().find('form').attr('action'));
         var i=0,html,action=$(data_ckp).attr('action'),fd=new FormData(data_ckp);
 //		for (var pair of fd.entries()) {
-//			console.log(pair[0]+ ', ' + pair[1]); 
+//			console.log(pair[0]+ ', ' + pair[1]);
 //		}
         $.ajax({
             type: 'POST',
@@ -235,7 +310,7 @@ function windowOpenFile(data_ckp) {
 
 			success: function(res,s) {
                 html='<div class="analitics">'+res+'</div>';
-                
+
                 $('html').addClass('window-open');
 
                 if ($('.window').length > 0) {

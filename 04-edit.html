@@ -65,18 +65,23 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 		<link rel="stylesheet" href="/bitrix/templates/funds3_lk/css/lteie8.css" media="all" />
 	<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-	
+
                 <link rel="stylesheet" href="local/layout/lk/css/style.template.css?94404" />
         <link rel="stylesheet" href="local/layout/lk/css/style.add.css?55726" />
         <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?20832" />
         <link rel="stylesheet" href="local/layout/lk/css/win.css?30980" />
 	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?36330" />
 	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?41745" />
+        <link rel="stylesheet" href="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="local/layout/lk/js/air-datepicker/datepicker.css" />
+        <script src="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="local/layout/lk/js/mask/jquery.mask.min.js"></script>
+        <script src="local/layout/lk/js/air-datepicker/datepicker.min.js"></script>
 				<script src="local/layout/lk/js/tree.js"></script>
 		<script src="local/layout/lk/js/win.js"></script>
 		<script src="local/layout/lk/js/change_pass.js"></script>
 		<script src="local/layout/lk/js/popups.js"></script>
-    
+
 </head>
 <body id="top">
 	<div id="panel"></div>
@@ -85,24 +90,15 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 
 			<div class="top">
 				<div class="wrap">
-					<div class="logo"><a href="/"><img src="local/layout/images/logo.png" /></a></div><div class='slogan'>Личный кабинет научного фонда</div>
+					<div class="logo"><a href="/"><img src="local/layout/lk/images/logo.png" /></a></div><div class='slogan'><span>Реестр фондов</span> поддержки научной, научно-технической, инновационной деятельности</div>
 					<span class="show_nav"><span></span></span>
-										<div class="top_user">
-						<a href="/personal/">Кирилл Калюжный (fund_user)</a>
-						<ul>
-							<li><a href="/personal/profile/">Профиль</a></li>
-							<li><a href="/personal/contest/">Конкурсы</a></li>
-							<li><a href="/personal/project/">Конкурсные проекты</a></li>
-							<li><a href="/personal/participant/">Участники</a></li>
-							<li class="top_user_out"><a href="/index.php?logout=yes">Выход</a></li>
-						</ul>
-					</div>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</header>
 		<div class="wrap">
 			<section id="content"><div class="cabinet-menu">
+	<div><a href="#">Рабочий стол</a></div>
 	<div><a href="/personal/profile/">Профиль</a></div>
 	<div><a href="/personal/contest/">Конкурсы</a></div>
 	<div class="active"><a href="/personal/project/">Конкурсные проекты</a></div>
@@ -111,32 +107,44 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 </div>
 
 <div class="bread">
-				<a href="/" title="Российский научный фонд" >Российский научный фонд</a> <span></span> 
-				<a href="/personal/" title="Личный кабинет" >Личный кабинет</a> <span></span> 
-				<a href="/personal/project/" title="Конкурсные проекты" >Конкурсные проекты</a> <span></span> 
+				<a href="/" title="Национальный благотворительный фонд" >Национальный благотворительный фонд</a> <span></span>
+				<a href="/personal/project/" title="Конкурсные проекты" >Конкурсные проекты</a> <span></span>
 				<a href="detail.php?id=675396" title="Очень динамичный проект, который должен затмить всех предшественников" >Очень динамичный проект, который должен затмить всех предшественников</a> <span></span> Редактирование проекта</div>
 <div class="back-mobile"><a href="detail.php?id=675396"><span><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z" /></svg></span>Очень динамичный проект, который должен затмить всех предшественников</a></div>
 <div class="entry">
-	<div class="riepp-request-header">
-		<h1>Очень динамичный проект, который должен затмить всех предшественников</h1>
-	</div>
-<div style="color:red"></div>	<div class="cabinet">
+    <div class="expert-request-header">
+        <a href="index.php" class="expert-request-header-back"><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z"></path></svg></a>
+        <h1>Очень динамичный проект, который должен затмить всех предшественников</h1>
+    </div>
+<div style="color:red"></div>
+<blockquote class='success_info'>
+<b>Спасибо, </b><br />
+<p>ваша заявка от 18.06.2019 18:40:03 принята! Заявке присвоен номер <b>NCMU_4_1</b></p>
+<a href="#" class="success_info-close"></a>
+</blockquote>
+	<div class="cabinet">
 		<div class="cabinet-container">
 			<div class="cabinet-content">
-                <div class="form_ok">Проект успешно изменен!</div>
+                <div class="cabinet-content-header">
+                    <h2>Карточка проекта</h2>
+                </div>
+
 				<div class="table_container">
 					<form method="post" action="">
-						<table class="table_no_rb" border="0" width="100%" cellspacing="0" cellpadding="0">
-						<thead>
-						<tr>
-							<th width="40%">Название</th>
-							<th width="">Значение</th>
-						</tr>
-						</thead>
+						<table class="table_edit" border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
 							<tr>
 								<td>Конкурс*</td>
-								<td><select name="kon" required>
-								<option value="675405" selected>Новый и динамично развивающийся конкурс<option value="675413">Современный конкурс по биотехнологиям<option value="675737">Конкурс инопланетных технологий								</select></td>
+								<td>
+                                    <div class="riepp-request-affiliated-select">
+                                        <div class="riepp-request-affiliated-select-value" data-placeholder="">Новый и динамично развивающийся конкурс</div>
+                                        <div class="riepp-request-affiliated-select-list">
+                                            <label><input type="radio" class="required" name="kon" value="675405" checked="checked" /><span>Новый и динамично развивающийся конкурс</span></label>
+                                            <label><input type="radio" class="required" name="kon" value="675413" /><span>Современный конкурс по биотехнологиям</span></label>
+                                            <label><input type="radio" class="required" name="kon" value="675737" /><span>Конкурс инопланетных технологий</span></label>
+                                        </div>
+                                    </div>
+                                </td>
 							</tr>
 							<tr>
 								<td>Название проекта*</td>
@@ -153,641 +161,679 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 																<div class="section_tree whited">
 									<div class="selected_tree_item notice info">Выбраны области: <span class="selected_tree_item_label"></span></div>
 									<ul class="tree" type="none" class="nolist">
-																			
+
 										<li><label for="section-3922">
 											<input type="radio" name="PROPERTY[][]" id="section-3922"  value="3922"> Гуманитарные науки										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3926">
 											<input type="radio" name="PROPERTY[][]" id="section-3926"  value="3926"> Искусствоведение										</label></li>
 										<ul>										<li><label for="element-675283">
-											<input type="checkbox" name="oesr[]" id="element-675283" value="675283" > Искусствоведение, история искусства, театроведение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675283" value="675283" ><span> Искусствоведение, история искусства, театроведение		</span>								</label></li>
 																				<li><label for="element-675284">
-											<input type="checkbox" name="oesr[]" id="element-675284" value="675284" > Фольклороведение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675284" value="675284" ><span> Фольклороведение					</span>					</label></li>
 																				<li><label for="element-675285">
-											<input type="checkbox" name="oesr[]" id="element-675285" value="675285" > Исследования кино, радио и телевидения										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675285" value="675285" ><span> Исследования кино, радио и телевидения</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3923">
 											<input type="radio" name="PROPERTY[][]" id="section-3923"  value="3923"> История и археология										</label></li>
 										<ul>										<li><label for="element-675271">
-											<input type="checkbox" name="oesr[]" id="element-675271" value="675271" > История										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675271" value="675271" ><span> История			</span>							</label></li>
 																				<li><label for="element-675272">
-											<input type="checkbox" name="oesr[]" id="element-675272" value="675272" > Археология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675272" value="675272" ><span> Археология			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3927">
 											<input type="radio" name="PROPERTY[][]" id="section-3927"  value="3927"> Прочие гуманитарные науки										</label></li>
 										<ul>										<li><label for="element-675286">
-											<input type="checkbox" name="oesr[]" id="element-675286" value="675286" > Прочие гуманитарные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675286" value="675286" ><span> Прочие гуманитарные науки	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3925">
 											<input type="radio" name="PROPERTY[][]" id="section-3925"  value="3925"> Философия, этика, религиоведение										</label></li>
 										<ul>										<li><label for="element-675279">
-											<input type="checkbox" name="oesr[]" id="element-675279" value="675279" checked> Философия, история и философия науки, техники и технологий										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675279" value="675279" checked><span> Философия, история и философия науки, техники и технологий			</span>							</label></li>
 																				<li><label for="element-675280">
-											<input type="checkbox" name="oesr[]" id="element-675280" value="675280" > Этика (исключая этику научных отраслей)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675280" value="675280" ><span> Этика (исключая этику научных отраслей)		</span>								</label></li>
 																				<li><label for="element-675281">
-											<input type="checkbox" name="oesr[]" id="element-675281" value="675281" > Богословие										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675281" value="675281" ><span> Богословие					</span>					</label></li>
 																				<li><label for="element-675282">
-											<input type="checkbox" name="oesr[]" id="element-675282" value="675282" > Религиоведение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675282" value="675282" ><span> Религиоведение			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3924">
 											<input type="radio" name="PROPERTY[][]" id="section-3924"  value="3924"> Языки и литература										</label></li>
 										<ul>										<li><label for="element-675273">
-											<input type="checkbox" name="oesr[]" id="element-675273" value="675273" > Общее языкознание										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675273" value="675273" ><span> Общее языкознание			</span>							</label></li>
 																				<li><label for="element-675274">
-											<input type="checkbox" name="oesr[]" id="element-675274" value="675274" > Частное языкознание										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675274" value="675274" ><span> Частное языкознание			</span>							</label></li>
 																				<li><label for="element-675275">
-											<input type="checkbox" name="oesr[]" id="element-675275" value="675275" > Литературоведение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675275" value="675275" ><span> Литературоведение			</span>							</label></li>
 																				<li><label for="element-675276">
-											<input type="checkbox" name="oesr[]" id="element-675276" value="675276" > Литературная теория										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675276" value="675276" ><span> Литературная теория			</span>							</label></li>
 																				<li><label for="element-675277">
-											<input type="checkbox" name="oesr[]" id="element-675277" value="675277" > Специальная литература										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675277" value="675277" ><span> Специальная литература	</span>									</label></li>
 																				<li><label for="element-675278">
-											<input type="checkbox" name="oesr[]" id="element-675278" value="675278" > Лингвистика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675278" value="675278" ><span> Лингвистика			</span>							</label></li>
 										</ul>
-									</ul>										
+									</ul>
 										<li><label for="section-3880">
 											<input type="radio" name="PROPERTY[][]" id="section-3880"  value="3880"> Естественные и точные науки										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3886">
 											<input type="radio" name="PROPERTY[][]" id="section-3886"  value="3886"> Биологические науки										</label></li>
 										<ul>										<li><label for="element-675115">
-											<input type="checkbox" name="oesr[]" id="element-675115" value="675115" > Клеточная биология, микробиология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675115" value="675115" ><span> Клеточная биология, микробиология		</span>								</label></li>
 																				<li><label for="element-675116">
-											<input type="checkbox" name="oesr[]" id="element-675116" value="675116" > Вирусология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675116" value="675116" ><span> Вирусология						</span>				</label></li>
 																				<li><label for="element-675117">
-											<input type="checkbox" name="oesr[]" id="element-675117" value="675117" > Биохимия и молекулярная биология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675117" value="675117" ><span> Биохимия и молекулярная биология	</span>									</label></li>
 																				<li><label for="element-675118">
-											<input type="checkbox" name="oesr[]" id="element-675118" value="675118" > Биохимические методы исследования										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675118" value="675118" ><span> Биохимические методы исследования			</span>							</label></li>
 																				<li><label for="element-675119">
-											<input type="checkbox" name="oesr[]" id="element-675119" value="675119" > Микология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675119" value="675119" ><span> Микология									</span>	</label></li>
 																				<li><label for="element-675120">
-											<input type="checkbox" name="oesr[]" id="element-675120" value="675120" > Биофизика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675120" value="675120" ><span> Биофизика									</span>	</label></li>
 																				<li><label for="element-675121">
-											<input type="checkbox" name="oesr[]" id="element-675121" value="675121" > Генетика и наследственность										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675121" value="675121" ><span> Генетика и наследственность					</span>					</label></li>
 																				<li><label for="element-675122">
-											<input type="checkbox" name="oesr[]" id="element-675122" value="675122" > Репродуктивная биология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675122" value="675122" ><span> Репродуктивная биология						</span>				</label></li>
 																				<li><label for="element-675123">
-											<input type="checkbox" name="oesr[]" id="element-675123" value="675123" > Биология развития										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675123" value="675123" ><span> Биология развития							</span>			</label></li>
 																				<li><label for="element-675124">
-											<input type="checkbox" name="oesr[]" id="element-675124" value="675124" > Науки о растениях, ботаника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675124" value="675124" ><span> Науки о растениях, ботаника					</span>					</label></li>
 																				<li><label for="element-675125">
-											<input type="checkbox" name="oesr[]" id="element-675125" value="675125" > Зоология, орнитология, энтомология, биология поведения										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675125" value="675125" ><span> Зоология, орнитология, энтомология, биология поведения	</span>									</label></li>
 																				<li><label for="element-675126">
-											<input type="checkbox" name="oesr[]" id="element-675126" value="675126" > Биология морей и пресных вод, лимнология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675126" value="675126" ><span> Биология морей и пресных вод, лимнология		</span>								</label></li>
 																				<li><label for="element-675127">
-											<input type="checkbox" name="oesr[]" id="element-675127" value="675127" > Экология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675127" value="675127" ><span> Экология									</span>	</label></li>
 																				<li><label for="element-675128">
-											<input type="checkbox" name="oesr[]" id="element-675128" value="675128" > Сохранение биологического разнообразия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675128" value="675128" ><span> Сохранение биологического разнообразия		</span>								</label></li>
 																				<li><label for="element-675129">
-											<input type="checkbox" name="oesr[]" id="element-675129" value="675129" > Биология, эволюционная биология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675129" value="675129" ><span> Биология, эволюционная биология			</span>							</label></li>
 																				<li><label for="element-675130">
-											<input type="checkbox" name="oesr[]" id="element-675130" value="675130" > Прочие разделы биологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675130" value="675130" ><span> Прочие разделы биологии			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3882">
 											<input type="radio" name="PROPERTY[][]" id="section-3882"  value="3882"> Компьютерные и информационные науки										</label></li>
 										<ul>										<li><label for="element-675090">
-											<input type="checkbox" name="oesr[]" id="element-675090" value="675090" > Компьютерные науки, информатика, биоинформатика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675090" value="675090" ><span> Компьютерные науки, информатика, биоинформатика			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3881">
 											<input type="radio" name="PROPERTY[][]" id="section-3881"  value="3881"> Математика										</label></li>
 										<ul>										<li><label for="element-675087">
-											<input type="checkbox" name="oesr[]" id="element-675087" value="675087" > Чистая математика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675087" value="675087" ><span> Чистая математика				</span>						</label></li>
 																				<li><label for="element-675088">
-											<input type="checkbox" name="oesr[]" id="element-675088" value="675088" > Прикладная математика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675088" value="675088" ><span> Прикладная математика			</span>							</label></li>
 																				<li><label for="element-675089">
-											<input type="checkbox" name="oesr[]" id="element-675089" value="675089" > Статистика и теория вероятности										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675089" value="675089" ><span> Статистика и теория вероятности	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3885">
 											<input type="radio" name="PROPERTY[][]" id="section-3885"  value="3885"> Науки о Земле и смежные науки об окружающей среде										</label></li>
 										<ul>										<li><label for="element-675104">
-											<input type="checkbox" name="oesr[]" id="element-675104" value="675104" > Науки о земле – междисциплинарные										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675104" value="675104" ><span> Науки о земле – междисциплинарные		</span>								</label></li>
 																				<li><label for="element-675105">
-											<input type="checkbox" name="oesr[]" id="element-675105" value="675105" > Минералогия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675105" value="675105" ><span> Минералогия								</span>		</label></li>
 																				<li><label for="element-675106">
-											<input type="checkbox" name="oesr[]" id="element-675106" value="675106" > Палеонтология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675106" value="675106" ><span> Палеонтология							</span>			</label></li>
 																				<li><label for="element-675107">
-											<input type="checkbox" name="oesr[]" id="element-675107" value="675107" > Геохимия и геофизика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675107" value="675107" ><span> Геохимия и геофизика					</span>					</label></li>
 																				<li><label for="element-675108">
-											<input type="checkbox" name="oesr[]" id="element-675108" value="675108" > Физическая география										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675108" value="675108" ><span> Физическая география					</span>					</label></li>
 																				<li><label for="element-675109">
-											<input type="checkbox" name="oesr[]" id="element-675109" value="675109" > Геология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675109" value="675109" ><span> Геология								</span>		</label></li>
 																				<li><label for="element-675110">
-											<input type="checkbox" name="oesr[]" id="element-675110" value="675110" > Вулканология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675110" value="675110" ><span> Вулканология							</span>			</label></li>
 																				<li><label for="element-675111">
-											<input type="checkbox" name="oesr[]" id="element-675111" value="675111" > Науки об окружающей среде										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675111" value="675111" ><span> Науки об окружающей среде			</span>							</label></li>
 																				<li><label for="element-675112">
-											<input type="checkbox" name="oesr[]" id="element-675112" value="675112" > Метеорология и науки об атмосфере										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675112" value="675112" ><span> Метеорология и науки об атмосфере		</span>								</label></li>
 																				<li><label for="element-675113">
-											<input type="checkbox" name="oesr[]" id="element-675113" value="675113" > Науки о климате										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675113" value="675113" ><span> Науки о климате					</span>					</label></li>
 																				<li><label for="element-675114">
-											<input type="checkbox" name="oesr[]" id="element-675114" value="675114" > Океанография, гидрология, науки о водных ресурсах										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675114" value="675114" ><span> Океанография, гидрология, науки о водных ресурсах	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3887">
 											<input type="radio" name="PROPERTY[][]" id="section-3887"  value="3887"> Прочие естественные и точные науки										</label></li>
 										<ul>										<li><label for="element-675131">
-											<input type="checkbox" name="oesr[]" id="element-675131" value="675131" > Прочие естественные и точные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675131" value="675131" ><span> Прочие естественные и точные науки		</span>								</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3883">
 											<input type="radio" name="PROPERTY[][]" id="section-3883"  value="3883"> Физика										</label></li>
 										<ul>										<li><label for="element-675091">
-											<input type="checkbox" name="oesr[]" id="element-675091" value="675091" > Атомная, молекулярная и химическая физика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675091" value="675091" ><span> Атомная, молекулярная и химическая физика		</span>								</label></li>
 																				<li><label for="element-675092">
-											<input type="checkbox" name="oesr[]" id="element-675092" value="675092" > Физика конденсированного состояния и сверхпроводимости										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675092" value="675092" ><span> Физика конденсированного состояния и сверхпроводимости	</span>									</label></li>
 																				<li><label for="element-675093">
-											<input type="checkbox" name="oesr[]" id="element-675093" value="675093" > Физика элементарных частиц и полей										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675093" value="675093" ><span> Физика элементарных частиц и полей		</span>								</label></li>
 																				<li><label for="element-675094">
-											<input type="checkbox" name="oesr[]" id="element-675094" value="675094" > Ядерная физика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675094" value="675094" ><span> Ядерная физика							</span>			</label></li>
 																				<li><label for="element-675095">
-											<input type="checkbox" name="oesr[]" id="element-675095" value="675095" > Физика жидкости, плазмы и поверхности										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675095" value="675095" ><span> Физика жидкости, плазмы и поверхности</span>										</label></li>
 																				<li><label for="element-675096">
-											<input type="checkbox" name="oesr[]" id="element-675096" value="675096" > Оптика и лазеры										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675096" value="675096" ><span> Оптика и лазеры				</span>						</label></li>
 																				<li><label for="element-675097">
-											<input type="checkbox" name="oesr[]" id="element-675097" value="675097" > Акустика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675097" value="675097" ><span> Акустика					</span>					</label></li>
 																				<li><label for="element-675098">
-											<input type="checkbox" name="oesr[]" id="element-675098" value="675098" > Астрономия и астрофизика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675098" value="675098" ><span> Астрономия и астрофизика	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3884">
 											<input type="radio" name="PROPERTY[][]" id="section-3884"  value="3884"> Химия										</label></li>
 										<ul>										<li><label for="element-675099">
-											<input type="checkbox" name="oesr[]" id="element-675099" value="675099" > Органическая химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675099" value="675099" ><span> Органическая химия				</span>						</label></li>
 																				<li><label for="element-675100">
-											<input type="checkbox" name="oesr[]" id="element-675100" value="675100" > Неорганическая и ядерная химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675100" value="675100" ><span> Неорганическая и ядерная химия			</span>							</label></li>
 																				<li><label for="element-675101">
-											<input type="checkbox" name="oesr[]" id="element-675101" value="675101" > Физическая химия, полимеры, электрохимия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675101" value="675101" ><span> Физическая химия, полимеры, электрохимия</span>										</label></li>
 																				<li><label for="element-675102">
-											<input type="checkbox" name="oesr[]" id="element-675102" value="675102" > Коллоидная химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675102" value="675102" ><span> Коллоидная химия			</span>							</label></li>
 																				<li><label for="element-675103">
-											<input type="checkbox" name="oesr[]" id="element-675103" value="675103" > Аналитическая химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675103" value="675103" ><span> Аналитическая химия			</span>							</label></li>
 										</ul>
-									</ul>										
+									</ul>
 										<li><label for="section-3900">
 											<input type="radio" name="PROPERTY[][]" id="section-3900"  value="3900"> Медицинские науки и  здравоохранение										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3904">
 											<input type="radio" name="PROPERTY[][]" id="section-3904"  value="3904"> Биотехнологии в медицине										</label></li>
 										<ul>										<li><label for="element-675225">
-											<input type="checkbox" name="oesr[]" id="element-675225" value="675225" > Биотехнологии в здравоохранении										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675225" value="675225" ><span> Биотехнологии в здравоохранении			</span>							</label></li>
 																				<li><label for="element-675226">
-											<input type="checkbox" name="oesr[]" id="element-675226" value="675226" > Технологии манипулирования клетками, тканями, органами, организмами										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675226" value="675226" ><span> Технологии манипулирования клетками, тканями, органами, организмами			</span>							</label></li>
 																				<li><label for="element-675227">
-											<input type="checkbox" name="oesr[]" id="element-675227" value="675227" > Технологии изучения ДНК, протеинов, ферментов, фармакогеномика, генотерапия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675227" value="675227" ><span> Технологии изучения ДНК, протеинов, ферментов, фармакогеномика, генотерапия	</span>									</label></li>
 																				<li><label for="element-675228">
-											<input type="checkbox" name="oesr[]" id="element-675228" value="675228" > Биоматериалы (импланты, сенсоры, устройства)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675228" value="675228" ><span> Биоматериалы (импланты, сенсоры, устройства)	</span>									</label></li>
 																				<li><label for="element-675229">
-											<input type="checkbox" name="oesr[]" id="element-675229" value="675229" > Этика применения биотехнологий в медицине										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675229" value="675229" ><span> Этика применения биотехнологий в медицине	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3902">
 											<input type="radio" name="PROPERTY[][]" id="section-3902"  value="3902"> Клиническая медицина										</label></li>
 										<ul>										<li><label for="element-675182">
-											<input type="checkbox" name="oesr[]" id="element-675182" value="675182" > Андрология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675182" value="675182" ><span> Андрология						</span>				</label></li>
 																				<li><label for="element-675183">
-											<input type="checkbox" name="oesr[]" id="element-675183" value="675183" > Акушерство и гинекология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675183" value="675183" ><span> Акушерство и гинекология		</span>								</label></li>
 																				<li><label for="element-675184">
-											<input type="checkbox" name="oesr[]" id="element-675184" value="675184" > Педиатрия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675184" value="675184" ><span> Педиатрия						</span>				</label></li>
 																				<li><label for="element-675185">
-											<input type="checkbox" name="oesr[]" id="element-675185" value="675185" > Сердечно-сосудистая система										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675185" value="675185" ><span> Сердечно-сосудистая система		</span>								</label></li>
 																				<li><label for="element-675186">
-											<input type="checkbox" name="oesr[]" id="element-675186" value="675186" > Периферическая сосудистая система										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675186" value="675186" ><span> Периферическая сосудистая система	</span>									</label></li>
 																				<li><label for="element-675187">
-											<input type="checkbox" name="oesr[]" id="element-675187" value="675187" > Гематология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675187" value="675187" ><span> Гематология					</span>					</label></li>
 																				<li><label for="element-675188">
-											<input type="checkbox" name="oesr[]" id="element-675188" value="675188" > Дыхательная система										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675188" value="675188" ><span> Дыхательная система			</span>							</label></li>
 																				<li><label for="element-675189">
-											<input type="checkbox" name="oesr[]" id="element-675189" value="675189" > Реаниматология и медицина катастроф										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675189" value="675189" ><span> Реаниматология и медицина катастроф			</span>							</label></li>
 																				<li><label for="element-675190">
-											<input type="checkbox" name="oesr[]" id="element-675190" value="675190" > Анестезиология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675190" value="675190" ><span> Анестезиология			</span>							</label></li>
 																				<li><label for="element-675191">
-											<input type="checkbox" name="oesr[]" id="element-675191" value="675191" > Ортопедия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675191" value="675191" ><span> Ортопедия				</span>						</label></li>
 																				<li><label for="element-675192">
-											<input type="checkbox" name="oesr[]" id="element-675192" value="675192" > Хирургия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675192" value="675192" ><span> Хирургия				</span>						</label></li>
 																				<li><label for="element-675193">
-											<input type="checkbox" name="oesr[]" id="element-675193" value="675193" > Радиология, ядерная медицина и медицинская визуализация										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675193" value="675193" ><span> Радиология, ядерная медицина и медицинская визуализация										</label></li>
 																				<li><label for="element-675194">
-											<input type="checkbox" name="oesr[]" id="element-675194" value="675194" > Трансплантология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675194" value="675194" ><span> Трансплантология						</span>				</label></li>
 																				<li><label for="element-675195">
-											<input type="checkbox" name="oesr[]" id="element-675195" value="675195" > Стоматология и хирургическая стоматология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675195" value="675195" ><span> Стоматология и хирургическая стоматология	</span>									</label></li>
 																				<li><label for="element-675196">
-											<input type="checkbox" name="oesr[]" id="element-675196" value="675196" > Дерматология и венерология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675196" value="675196" ><span> Дерматология и венерология		</span>								</label></li>
 																				<li><label for="element-675197">
-											<input type="checkbox" name="oesr[]" id="element-675197" value="675197" > Аллергология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675197" value="675197" ><span> Аллергология				</span>						</label></li>
 																				<li><label for="element-675198">
-											<input type="checkbox" name="oesr[]" id="element-675198" value="675198" > Ревматология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675198" value="675198" ><span> Ревматология				</span>						</label></li>
 																				<li><label for="element-675199">
-											<input type="checkbox" name="oesr[]" id="element-675199" value="675199" > Эндокринология и обмен веществ										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675199" value="675199" ><span> Эндокринология и обмен веществ		</span>								</label></li>
 																				<li><label for="element-675200">
-											<input type="checkbox" name="oesr[]" id="element-675200" value="675200" > Гастроэнтерология и гепатология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675200" value="675200" ><span> Гастроэнтерология и гепатология		</span>								</label></li>
 																				<li><label for="element-675201">
-											<input type="checkbox" name="oesr[]" id="element-675201" value="675201" > Урология и нефрология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675201" value="675201" ><span> Урология и нефрология			</span>							</label></li>
 																				<li><label for="element-675202">
-											<input type="checkbox" name="oesr[]" id="element-675202" value="675202" > Онкология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675202" value="675202" ><span> Онкология						</span>				</label></li>
 																				<li><label for="element-675203">
-											<input type="checkbox" name="oesr[]" id="element-675203" value="675203" > Офтальмология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675203" value="675203" ><span> Офтальмология					</span>					</label></li>
 																				<li><label for="element-675204">
-											<input type="checkbox" name="oesr[]" id="element-675204" value="675204" > Оториноларингология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675204" value="675204" ><span> Оториноларингология				</span>						</label></li>
 																				<li><label for="element-675205">
-											<input type="checkbox" name="oesr[]" id="element-675205" value="675205" > Психиатрия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675205" value="675205" ><span> Психиатрия							</span>			</label></li>
 																				<li><label for="element-675206">
-											<input type="checkbox" name="oesr[]" id="element-675206" value="675206" > Клиническая неврология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675206" value="675206" ><span> Клиническая неврология				</span>						</label></li>
 																				<li><label for="element-675207">
-											<input type="checkbox" name="oesr[]" id="element-675207" value="675207" > Гериатрия и геронтология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675207" value="675207" ><span> Гериатрия и геронтология			</span>							</label></li>
 																				<li><label for="element-675208">
-											<input type="checkbox" name="oesr[]" id="element-675208" value="675208" > Терапия и лечебное дело										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675208" value="675208" ><span> Терапия и лечебное дело				</span>						</label></li>
 																				<li><label for="element-675209">
-											<input type="checkbox" name="oesr[]" id="element-675209" value="675209" > Прочие области клинической медицины										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675209" value="675209" ><span> Прочие области клинической медицины	</span>									</label></li>
 																				<li><label for="element-675210">
-											<input type="checkbox" name="oesr[]" id="element-675210" value="675210" > Нетрадиционная медицина										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675210" value="675210" ><span> Нетрадиционная медицина		</span>								</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3903">
 											<input type="radio" name="PROPERTY[][]" id="section-3903"  value="3903"> Науки о здоровье										</label></li>
 										<ul>										<li><label for="element-675211">
-											<input type="checkbox" name="oesr[]" id="element-675211" value="675211" > Услуги здравоохранения (включая услуги больниц и финансирование)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675211" value="675211" ><span> Услуги здравоохранения (включая услуги больниц и финансирование)	</span>									</label></li>
 																				<li><label for="element-675212">
-											<input type="checkbox" name="oesr[]" id="element-675212" value="675212" > Политика в области здравоохранения										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675212" value="675212" ><span> Политика в области здравоохранения			</span>							</label></li>
 																				<li><label for="element-675213">
-											<input type="checkbox" name="oesr[]" id="element-675213" value="675213" > Сестринское дело										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675213" value="675213" ><span> Сестринское дело						</span>				</label></li>
 																				<li><label for="element-675214">
-											<input type="checkbox" name="oesr[]" id="element-675214" value="675214" > Питание и диетология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675214" value="675214" ><span> Питание и диетология				</span>						</label></li>
 																				<li><label for="element-675215">
-											<input type="checkbox" name="oesr[]" id="element-675215" value="675215" > Общественное здравоохранение, гигиена окружающей среды										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675215" value="675215" ><span> Общественное здравоохранение, гигиена окружающей среды	</span>									</label></li>
 																				<li><label for="element-675216">
-											<input type="checkbox" name="oesr[]" id="element-675216" value="675216" > Тропическая медицина										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675216" value="675216" ><span> Тропическая медицина				</span>						</label></li>
 																				<li><label for="element-675217">
-											<input type="checkbox" name="oesr[]" id="element-675217" value="675217" > Паразитология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675217" value="675217" ><span> Паразитология					</span>					</label></li>
 																				<li><label for="element-675218">
-											<input type="checkbox" name="oesr[]" id="element-675218" value="675218" > Инфекционные заболевания										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675218" value="675218" ><span> Инфекционные заболевания			</span>							</label></li>
 																				<li><label for="element-675219">
-											<input type="checkbox" name="oesr[]" id="element-675219" value="675219" > Эпидемиология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675219" value="675219" ><span> Эпидемиология				</span>						</label></li>
 																				<li><label for="element-675220">
-											<input type="checkbox" name="oesr[]" id="element-675220" value="675220" > Гигиена труда										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675220" value="675220" ><span> Гигиена труда				</span>						</label></li>
 																				<li><label for="element-675221">
-											<input type="checkbox" name="oesr[]" id="element-675221" value="675221" > Спорт и фитнесс										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675221" value="675221" ><span> Спорт и фитнесс			</span>							</label></li>
 																				<li><label for="element-675222">
-											<input type="checkbox" name="oesr[]" id="element-675222" value="675222" > Общественная биомедицина (включая планирование семьи, сексологию, псиохоонкологию)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675222" value="675222" ><span> Общественная биомедицина (включая планирование семьи, сексологию, псиохоонкологию)			</span>							</label></li>
 																				<li><label for="element-675223">
-											<input type="checkbox" name="oesr[]" id="element-675223" value="675223" > Врачебная этика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675223" value="675223" ><span> Врачебная этика			</span>							</label></li>
 																				<li><label for="element-675224">
-											<input type="checkbox" name="oesr[]" id="element-675224" value="675224" > Токсикомания										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675224" value="675224" ><span> Токсикомания	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3905">
 											<input type="radio" name="PROPERTY[][]" id="section-3905"  value="3905"> Прочие медицинские науки										</label></li>
 										<ul>										<li><label for="element-675230">
-											<input type="checkbox" name="oesr[]" id="element-675230" value="675230" > Криминалистическая экспертиза										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675230" value="675230" ><span> Криминалистическая экспертиза	</span>									</label></li>
 																				<li><label for="element-675231">
-											<input type="checkbox" name="oesr[]" id="element-675231" value="675231" > Прочие медицинские науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675231" value="675231" ><span> Прочие медицинские науки	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3901">
 											<input type="radio" name="PROPERTY[][]" id="section-3901"  value="3901"> Фундаментальная медицина										</label></li>
 										<ul>										<li><label for="element-675173">
-											<input type="checkbox" name="oesr[]" id="element-675173" value="675173" > Анатомия и морфология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675173" value="675173" ><span> Анатомия и морфология			</span>							</label></li>
 																				<li><label for="element-675174">
-											<input type="checkbox" name="oesr[]" id="element-675174" value="675174" > Генетика человека										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675174" value="675174" ><span> Генетика человека			</span>							</label></li>
 																				<li><label for="element-675175">
-											<input type="checkbox" name="oesr[]" id="element-675175" value="675175" > Иммунология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675175" value="675175" ><span> Иммунология					</span>					</label></li>
 																				<li><label for="element-675176">
-											<input type="checkbox" name="oesr[]" id="element-675176" value="675176" > Нейробиология (включая психофизиологию)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675176" value="675176" ><span> Нейробиология (включая психофизиологию)		</span>								</label></li>
 																				<li><label for="element-675177">
-											<input type="checkbox" name="oesr[]" id="element-675177" value="675177" > Фармакология и фармацевтика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675177" value="675177" ><span> Фармакология и фармацевтика			</span>							</label></li>
 																				<li><label for="element-675178">
-											<input type="checkbox" name="oesr[]" id="element-675178" value="675178" > Медицинская химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675178" value="675178" ><span> Медицинская химия			</span>							</label></li>
 																				<li><label for="element-675179">
-											<input type="checkbox" name="oesr[]" id="element-675179" value="675179" > Токсикология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675179" value="675179" ><span> Токсикология		</span>								</label></li>
 																				<li><label for="element-675180">
-											<input type="checkbox" name="oesr[]" id="element-675180" value="675180" > Физиология (включая цитологию)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675180" value="675180" ><span> Физиология (включая цитологию)	</span>									</label></li>
 																				<li><label for="element-675181">
-											<input type="checkbox" name="oesr[]" id="element-675181" value="675181" > Патология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675181" value="675181" ><span> Патология</span>										</label></li>
 										</ul>
-									</ul>										
+									</ul>
 										<li><label for="section-3906">
 											<input type="radio" name="PROPERTY[][]" id="section-3906"  value="3906"> Сельскохозяйственные науки										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3909">
 											<input type="radio" name="PROPERTY[][]" id="section-3909"  value="3909"> Ветеринарные науки										</label></li>
 										<ul>										<li><label for="element-675241">
-											<input type="checkbox" name="oesr[]" id="element-675241" value="675241" > Ветеринарные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675241" value="675241" ><span> Ветеринарные науки	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3908">
 											<input type="radio" name="PROPERTY[][]" id="section-3908"  value="3908"> Животноводство и молочное дело										</label></li>
 										<ul>										<li><label for="element-675238">
-											<input type="checkbox" name="oesr[]" id="element-675238" value="675238" > Зоотехния и молочное дело										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675238" value="675238" ><span> Зоотехния и молочное дело	</span>									</label></li>
 																				<li><label for="element-675239">
-											<input type="checkbox" name="oesr[]" id="element-675239" value="675239" > Животноводство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675239" value="675239" ><span> Животноводство			</span>							</label></li>
 																				<li><label for="element-675240">
-											<input type="checkbox" name="oesr[]" id="element-675240" value="675240" > Разведение домашних животных										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675240" value="675240" ><span> Разведение домашних животных	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3911">
 											<input type="radio" name="PROPERTY[][]" id="section-3911"  value="3911"> Прочие сельскохозяйственные науки										</label></li>
 										<ul>										<li><label for="element-675245">
-											<input type="checkbox" name="oesr[]" id="element-675245" value="675245" > Прочие сельскохозяйственные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675245" value="675245" ><span> Прочие сельскохозяйственные науки	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3907">
 											<input type="radio" name="PROPERTY[][]" id="section-3907"  value="3907"> Сельское хозяйство, лесное хозяйство, рыбное хозяйство										</label></li>
 										<ul>										<li><label for="element-675232">
-											<input type="checkbox" name="oesr[]" id="element-675232" value="675232" > Сельское хозяйство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675232" value="675232" ><span> Сельское хозяйство				</span>						</label></li>
 																				<li><label for="element-675233">
-											<input type="checkbox" name="oesr[]" id="element-675233" value="675233" > Лесное хозяйство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675233" value="675233" ><span> Лесное хозяйство			</span>							</label></li>
 																				<li><label for="element-675234">
-											<input type="checkbox" name="oesr[]" id="element-675234" value="675234" > Рыбный промысел										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675234" value="675234" ><span> Рыбный промысел				</span>						</label></li>
 																				<li><label for="element-675235">
-											<input type="checkbox" name="oesr[]" id="element-675235" value="675235" > Почвоведение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675235" value="675235" ><span> Почвоведение				</span>						</label></li>
 																				<li><label for="element-675236">
-											<input type="checkbox" name="oesr[]" id="element-675236" value="675236" > Растениеводство, виноградарство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675236" value="675236" ><span> Растениеводство, виноградарство			</span>							</label></li>
 																				<li><label for="element-675237">
-											<input type="checkbox" name="oesr[]" id="element-675237" value="675237" > Агрономия, селекция и защита растений										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675237" value="675237" ><span> Агрономия, селекция и защита растений	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3910">
 											<input type="radio" name="PROPERTY[][]" id="section-3910"  value="3910"> Сельскохозяйственные биотехнологии										</label></li>
 										<ul>										<li><label for="element-675242">
-											<input type="checkbox" name="oesr[]" id="element-675242" value="675242" > Сельскохозяйственные и пищевые биотехнологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675242" value="675242" ><span> Сельскохозяйственные и пищевые биотехнологии	</span>									</label></li>
 																				<li><label for="element-675243">
-											<input type="checkbox" name="oesr[]" id="element-675243" value="675243" > Технологии генной инженерии, клонирование, маркёр-ориентированная селекция, ДНК-диагностика, технологии производства биосырья, биофармакология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675243" value="675243" ><span> Технологии генной инженерии, клонирование, маркёр-ориентированная селекция, ДНК-диагностика, технологии производства биосырья, биофармакология</span>										</label></li>
 																				<li><label for="element-675244">
-											<input type="checkbox" name="oesr[]" id="element-675244" value="675244" > Этика применения биотехнологий в сельском хозяйстве										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675244" value="675244" ><span> Этика применения биотехнологий в сельском хозяйстве		</span>								</label></li>
 										</ul>
-									</ul>										
+									</ul>
 										<li><label for="section-3912">
 											<input type="radio" name="PROPERTY[][]" id="section-3912"  value="3912"> Социальные науки										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3915">
 											<input type="radio" name="PROPERTY[][]" id="section-3915"  value="3915"> Науки об образовании										</label></li>
 										<ul>										<li><label for="element-675251">
-											<input type="checkbox" name="oesr[]" id="element-675251" value="675251" > Общее образование (включая тренинг, педагогику, дидактику)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675251" value="675251" ><span> Общее образование (включая тренинг, педагогику, дидактику)	</span>									</label></li>
 																				<li><label for="element-675252">
-											<input type="checkbox" name="oesr[]" id="element-675252" value="675252" > Специальное образование (для одареных или ограниченных людей)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675252" value="675252" ><span> Специальное образование (для одареных или ограниченных людей)</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3918">
 											<input type="radio" name="PROPERTY[][]" id="section-3918"  value="3918"> Политология										</label></li>
 										<ul>										<li><label for="element-675258">
-											<input type="checkbox" name="oesr[]" id="element-675258" value="675258" > Политология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675258" value="675258" ><span> Политология					</span>					</label></li>
 																				<li><label for="element-675259">
-											<input type="checkbox" name="oesr[]" id="element-675259" value="675259" > Государственное управление										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675259" value="675259" ><span> Государственное управление	</span>									</label></li>
 																				<li><label for="element-675260">
-											<input type="checkbox" name="oesr[]" id="element-675260" value="675260" > Теория организации										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675260" value="675260" ><span> Теория организации		</span>								</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3917">
 											<input type="radio" name="PROPERTY[][]" id="section-3917"  value="3917"> Право										</label></li>
 										<ul>										<li><label for="element-675257">
-											<input type="checkbox" name="oesr[]" id="element-675257" value="675257" > Юриспруденция, криминология, пенология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675257" value="675257" ><span> Юриспруденция, криминология, пенология</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3921">
 											<input type="radio" name="PROPERTY[][]" id="section-3921"  value="3921"> Прочие социальные науки										</label></li>
 										<ul>										<li><label for="element-675269">
-											<input type="checkbox" name="oesr[]" id="element-675269" value="675269" > Междисциплинарные социальные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675269" value="675269" ><span> Междисциплинарные социальные науки</span>										</label></li>
 																				<li><label for="element-675270">
-											<input type="checkbox" name="oesr[]" id="element-675270" value="675270" > Прочие социальные науки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675270" value="675270" ><span> Прочие социальные науки</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3913">
 											<input type="radio" name="PROPERTY[][]" id="section-3913"  value="3913"> Психология										</label></li>
 										<ul>										<li><label for="element-675246">
-											<input type="checkbox" name="oesr[]" id="element-675246" value="675246" > Психология (включая человеко-машинное взаимодействие)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675246" value="675246" ><span> Психология (включая человеко-машинное взаимодействие)</span>										</label></li>
 																				<li><label for="element-675247">
-											<input type="checkbox" name="oesr[]" id="element-675247" value="675247" > Коррекционная психология (включая терапию людей с ограниченными способностями к обучению, речи, слуху, зрению и другим функциям)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675247" value="675247" ><span> Коррекционная психология (включая терапию людей с ограниченными способностями к обучению, речи, слуху, зрению и другим функциям)</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3920">
 											<input type="radio" name="PROPERTY[][]" id="section-3920"  value="3920"> СМИ и массовые коммуникации										</label></li>
 										<ul>										<li><label for="element-675265">
-											<input type="checkbox" name="oesr[]" id="element-675265" value="675265" > Журналистика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675265" value="675265" ><span> Журналистика				</span>						</label></li>
 																				<li><label for="element-675266">
-											<input type="checkbox" name="oesr[]" id="element-675266" value="675266" > Теория информации										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675266" value="675266" ><span> Теория информации			</span>							</label></li>
 																				<li><label for="element-675267">
-											<input type="checkbox" name="oesr[]" id="element-675267" value="675267" > Библиотечное дело										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675267" value="675267" ><span> Библиотечное дело			</span>							</label></li>
 																				<li><label for="element-675268">
-											<input type="checkbox" name="oesr[]" id="element-675268" value="675268" > СМИ и социокультурные коммуникации										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675268" value="675268" ><span> СМИ и социокультурные коммуникации	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3919">
 											<input type="radio" name="PROPERTY[][]" id="section-3919"  value="3919"> Социально-экономическая география										</label></li>
 										<ul>										<li><label for="element-675261">
-											<input type="checkbox" name="oesr[]" id="element-675261" value="675261" > Исследования окружающей среды (социальные проблемы)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675261" value="675261" ><span> Исследования окружающей среды (социальные проблемы)	</span>									</label></li>
 																				<li><label for="element-675262">
-											<input type="checkbox" name="oesr[]" id="element-675262" value="675262" > Культурная и экономическая география										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675262" value="675262" ><span> Культурная и экономическая география</span>										</label></li>
 																				<li><label for="element-675263">
-											<input type="checkbox" name="oesr[]" id="element-675263" value="675263" > Урбанистика (планирование и развитие)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675263" value="675263" ><span> Урбанистика (планирование и развитие)</span>										</label></li>
 																				<li><label for="element-675264">
-											<input type="checkbox" name="oesr[]" id="element-675264" value="675264" > Транспортное сообщение и использование транспорта										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675264" value="675264" ><span> Транспортное сообщение и использование транспорта</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3916">
 											<input type="radio" name="PROPERTY[][]" id="section-3916"  value="3916"> Социология										</label></li>
 										<ul>										<li><label for="element-675253">
-											<input type="checkbox" name="oesr[]" id="element-675253" value="675253" > Социология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675253" value="675253" ><span> Социология</span>										</label></li>
 																				<li><label for="element-675254">
-											<input type="checkbox" name="oesr[]" id="element-675254" value="675254" > Демография										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675254" value="675254" ><span> Демография</span>										</label></li>
 																				<li><label for="element-675255">
-											<input type="checkbox" name="oesr[]" id="element-675255" value="675255" > Антропология, этнология										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675255" value="675255" ><span> Антропология, этнология</span>										</label></li>
 																				<li><label for="element-675256">
-											<input type="checkbox" name="oesr[]" id="element-675256" value="675256" > Обществоведение (взаимодействие полов, социальные проблемы, семейные отношения, общественная деятельность)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675256" value="675256" ><span> Обществоведение (взаимодействие полов, социальные проблемы, семейные отношения, общественная деятельность)</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3914">
 											<input type="radio" name="PROPERTY[][]" id="section-3914"  value="3914"> Экономика и бизнес										</label></li>
 										<ul>										<li><label for="element-675248">
-											<input type="checkbox" name="oesr[]" id="element-675248" value="675248" > Экономика, эконометрика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675248" value="675248" ><span> Экономика, эконометрика</span>										</label></li>
 																				<li><label for="element-675249">
-											<input type="checkbox" name="oesr[]" id="element-675249" value="675249" > Производственные отношения										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675249" value="675249" ><span> Производственные отношения</span>										</label></li>
 																				<li><label for="element-675250">
-											<input type="checkbox" name="oesr[]" id="element-675250" value="675250" > Управление и предпринимательство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675250" value="675250" ><span> Управление и предпринимательство</span>										</label></li>
 										</ul>
-									</ul>										
+									</ul>
 										<li><label for="section-3888">
 											<input type="radio" name="PROPERTY[][]" id="section-3888"  value="3888"> Техника и технологии										</label></li>
-										
-									<ul>										
+
+									<ul>
 										<li><label for="section-3893">
 											<input type="radio" name="PROPERTY[][]" id="section-3893"  value="3893"> Материаловедение										</label></li>
 										<ul>										<li><label for="element-675149">
-											<input type="checkbox" name="oesr[]" id="element-675149" value="675149" > Материаловедение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675149" value="675149" ><span> Материаловедение</span>										</label></li>
 																				<li><label for="element-675150">
-											<input type="checkbox" name="oesr[]" id="element-675150" value="675150" > Керамика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675150" value="675150" ><span> Керамика</span>										</label></li>
 																				<li><label for="element-675151">
-											<input type="checkbox" name="oesr[]" id="element-675151" value="675151" > Пленки и покрытия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675151" value="675151" ><span> Пленки и покрытия</span>										</label></li>
 																				<li><label for="element-675152">
-											<input type="checkbox" name="oesr[]" id="element-675152" value="675152" > Композитные материалы										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675152" value="675152" ><span> Композитные материалы</span>										</label></li>
 																				<li><label for="element-675153">
-											<input type="checkbox" name="oesr[]" id="element-675153" value="675153" > Дерево и бумага										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675153" value="675153" ><span> Дерево и бумага</span>										</label></li>
 																				<li><label for="element-675154">
-											<input type="checkbox" name="oesr[]" id="element-675154" value="675154" > Текстиль и ткани										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675154" value="675154" ><span> Текстиль и ткани</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3894">
 											<input type="radio" name="PROPERTY[][]" id="section-3894"  value="3894"> Медицинские технологии										</label></li>
 										<ul>										<li><label for="element-675155">
-											<input type="checkbox" name="oesr[]" id="element-675155" value="675155" > Медицинская техника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675155" value="675155" ><span> Медицинская техника</span>										</label></li>
 																				<li><label for="element-675156">
-											<input type="checkbox" name="oesr[]" id="element-675156" value="675156" > Технологии медицинских лабораторий (включая анализ и диагностику)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675156" value="675156" ><span> Технологии медицинских лабораторий (включая анализ и диагностику)</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3891">
 											<input type="radio" name="PROPERTY[][]" id="section-3891"  value="3891"> Механика и машиностроение										</label></li>
 										<ul>										<li><label for="element-675142">
-											<input type="checkbox" name="oesr[]" id="element-675142" value="675142" > Машиностроение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675142" value="675142" ><span> Машиностроение</span>										</label></li>
 																				<li><label for="element-675143">
-											<input type="checkbox" name="oesr[]" id="element-675143" value="675143" > Прикладная механика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675143" value="675143" ><span> Прикладная механика</span>										</label></li>
 																				<li><label for="element-675144">
-											<input type="checkbox" name="oesr[]" id="element-675144" value="675144" > Термодинамика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675144" value="675144" ><span> Термодинамика</span>										</label></li>
 																				<li><label for="element-675145">
-											<input type="checkbox" name="oesr[]" id="element-675145" value="675145" > Авиакосмическая техника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675145" value="675145" ><span> Авиакосмическая техника</span>										</label></li>
 																				<li><label for="element-675146">
-											<input type="checkbox" name="oesr[]" id="element-675146" value="675146" > Ядерная техника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675146" value="675146" ><span> Ядерная техника</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3898">
 											<input type="radio" name="PROPERTY[][]" id="section-3898"  value="3898"> Нанотехнологии										</label></li>
 										<ul>										<li><label for="element-675169">
-											<input type="checkbox" name="oesr[]" id="element-675169" value="675169" > Разработка и производство наноматериалов										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675169" value="675169" ><span> Разработка и производство наноматериалов</span>										</label></li>
 																				<li><label for="element-675170">
-											<input type="checkbox" name="oesr[]" id="element-675170" value="675170" > Нанотехнологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675170" value="675170" ><span> Нанотехнологии</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3896">
 											<input type="radio" name="PROPERTY[][]" id="section-3896"  value="3896"> Природоохранные биотехнологии										</label></li>
 										<ul>										<li><label for="element-675163">
-											<input type="checkbox" name="oesr[]" id="element-675163" value="675163" > Природоохранные биотехнологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675163" value="675163" ><span> Природоохранные биотехнологии</span>										</label></li>
 																				<li><label for="element-675164">
-											<input type="checkbox" name="oesr[]" id="element-675164" value="675164" > Биовосстановление, технологии биодиагностики (включая ДНК-чипы, биосенсоры)										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675164" value="675164" ><span> Биовосстановление, технологии биодиагностики (включая ДНК-чипы, биосенсоры)</span>										</label></li>
 																				<li><label for="element-675165">
-											<input type="checkbox" name="oesr[]" id="element-675165" value="675165" > Экологическая этика										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675165" value="675165" ><span> Экологическая этика</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3897">
 											<input type="radio" name="PROPERTY[][]" id="section-3897"  value="3897"> Промышленные биотехнологии										</label></li>
 										<ul>										<li><label for="element-675166">
-											<input type="checkbox" name="oesr[]" id="element-675166" value="675166" > Промышленные биотехнологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675166" value="675166" ><span> Промышленные биотехнологии</span>										</label></li>
 																				<li><label for="element-675167">
-											<input type="checkbox" name="oesr[]" id="element-675167" value="675167" > Биологические агенты в промышленности, биокатализ, ферментация										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675167" value="675167" ><span> Биологические агенты в промышленности, биокатализ, ферментация</span>										</label></li>
 																				<li><label for="element-675168">
-											<input type="checkbox" name="oesr[]" id="element-675168" value="675168" > Биопродукты на основе биологического сырья, биоматериалы, биопластик, биотопливо, биосырье и тонкая химия										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675168" value="675168" ><span> Биопродукты на основе биологического сырья, биоматериалы, биопластик, биотопливо, биосырье и тонкая химия</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3899">
 											<input type="radio" name="PROPERTY[][]" id="section-3899"  value="3899"> Прочие технологии										</label></li>
 										<ul>										<li><label for="element-675171">
-											<input type="checkbox" name="oesr[]" id="element-675171" value="675171" > Продукты питания и напитки										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675171" value="675171" ><span> Продукты питания и напитки</span>										</label></li>
 																				<li><label for="element-675172">
-											<input type="checkbox" name="oesr[]" id="element-675172" value="675172" > Прочая техника и технологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675172" value="675172" ><span> Прочая техника и технологии</span>										</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3895">
 											<input type="radio" name="PROPERTY[][]" id="section-3895"  value="3895"> Рациональное природопользование										</label></li>
 										<ul>										<li><label for="element-675157">
-											<input type="checkbox" name="oesr[]" id="element-675157" value="675157" > Геологическое машиностроение и природоохранные технологии, геотехеника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675157" value="675157" ><span> Геологическое машиностроение и природоохранные технологии, геотехеника</span>										</label></li>
 																				<li><label for="element-675158">
-											<input type="checkbox" name="oesr[]" id="element-675158" value="675158" > Нефтяное машиностроение, энергетика и топливо										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675158" value="675158" ><span> Нефтяное машиностроение, энергетика и топливо	</span>									</label></li>
 																				<li><label for="element-675159">
-											<input type="checkbox" name="oesr[]" id="element-675159" value="675159" > Дистанционное зондирование										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675159" value="675159" ><span> Дистанционное зондирование				</span>						</label></li>
 																				<li><label for="element-675160">
-											<input type="checkbox" name="oesr[]" id="element-675160" value="675160" > Добыча и переработка полезных ископаемых										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675160" value="675160" ><span> Добыча и переработка полезных ископаемых	</span>									</label></li>
 																				<li><label for="element-675161">
-											<input type="checkbox" name="oesr[]" id="element-675161" value="675161" > Судовое машиностроение, морские суда										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675161" value="675161" ><span> Судовое машиностроение, морские суда	</span>									</label></li>
 																				<li><label for="element-675162">
-											<input type="checkbox" name="oesr[]" id="element-675162" value="675162" > Морское машиностроение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675162" value="675162" ><span> Морское машиностроение			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3889">
 											<input type="radio" name="PROPERTY[][]" id="section-3889"  value="3889"> Строительство и архитектура										</label></li>
 										<ul>										<li><label for="element-675132">
-											<input type="checkbox" name="oesr[]" id="element-675132" value="675132" > Гражданское строительство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675132" value="675132" ><span> Гражданское строительство	</span>									</label></li>
 																				<li><label for="element-675133">
-											<input type="checkbox" name="oesr[]" id="element-675133" value="675133" > Архитектура										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675133" value="675133" ><span> Архитектура					</span>					</label></li>
 																				<li><label for="element-675134">
-											<input type="checkbox" name="oesr[]" id="element-675134" value="675134" > Проектирование										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675134" value="675134" ><span> Проектирование			</span>							</label></li>
 																				<li><label for="element-675135">
-											<input type="checkbox" name="oesr[]" id="element-675135" value="675135" > Транспортное сообщение										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675135" value="675135" ><span> Транспортное сообщение			</span>							</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3892">
 											<input type="radio" name="PROPERTY[][]" id="section-3892"  value="3892"> Химические технологии										</label></li>
 										<ul>										<li><label for="element-675147">
-											<input type="checkbox" name="oesr[]" id="element-675147" value="675147" > Химическое машиностроение и производство										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675147" value="675147" ><span> Химическое машиностроение и производство		</span>								</label></li>
 																				<li><label for="element-675148">
-											<input type="checkbox" name="oesr[]" id="element-675148" value="675148" > Химические технологии										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675148" value="675148" ><span> Химические технологии	</span>									</label></li>
 										</ul>
-																			
+
 										<li><label for="section-3890">
 											<input type="radio" name="PROPERTY[][]" id="section-3890"  value="3890"> Электротехника, электроника, информационные технологии										</label></li>
 										<ul>										<li><label for="element-675136">
-											<input type="checkbox" name="oesr[]" id="element-675136" value="675136" > Электротехника и электроника										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675136" value="675136" ><span> Электротехника и электроника</span>										</label></li>
 																				<li><label for="element-675137">
-											<input type="checkbox" name="oesr[]" id="element-675137" value="675137" > Робототехника и автоматизированный контроль										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675137" value="675137" ><span> Робототехника и автоматизированный контроль</span>										</label></li>
 																				<li><label for="element-675138">
-											<input type="checkbox" name="oesr[]" id="element-675138" value="675138" > Автоматизированные системы управления										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675138" value="675138" ><span> Автоматизированные системы управления</span>										</label></li>
 																				<li><label for="element-675139">
-											<input type="checkbox" name="oesr[]" id="element-675139" value="675139" > Системы и компоненты передачи данных										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675139" value="675139" ><span> Системы и компоненты передачи данных</span>										</label></li>
 																				<li><label for="element-675140">
-											<input type="checkbox" name="oesr[]" id="element-675140" value="675140" > Телекоммуникации										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675140" value="675140" ><span> Телекоммуникации</span>										</label></li>
 																				<li><label for="element-675141">
-											<input type="checkbox" name="oesr[]" id="element-675141" value="675141" > Компьютерное аппаратное обеспечение и архитектура										</label></li>
+											<input type="checkbox" name="oesr[]" id="element-675141" value="675141" ><span> Компьютерное аппаратное обеспечение и архитектура</span>										</label></li>
 										</ul>
 																		</ul>
-								</div>						
-								
+								</div>
 
-								
+
+
 																</td>
 							</tr>
 							<tr>
 								<td>Приоритет Стратегии НТР*</td>
-								<td><select name="pri" multiple required class='mselect inp'>
-									<option value="506128">цифровые технологии, роботизированные системы, новые материалы, большие данные, машинное обучение, искусственный интеллект<option value="506129">экологически чистая и ресурсосберегающая энергетика, глубокая переработка углеводородного сырья, новые источники энергии<option value="506130">персонализированная медицина, высокотехнологичное здравоохранение и технологии здоровьесбережения<option value="506131">экологически чистое агро- и аквахозяйство, защита сельскохозяйственных растений и животных, безопасные продукты питания<option value="506132" selected>противодействие техногенным, биогенным, социокультурным, информационным угрозам, терроризму<option value="506133">интеллектуальные транспортные и телекоммуникационные системы, освоение космического и воздушного пространства, Мирового океана, Арктики и Антарктики<option value="506134">ответ на большие вызовы с учетом взаимодействия человека и природы, человека и технологий, социальных институтов								</select></td>
+								<td>
+                                    <div class="riepp-request-affiliated-select">
+                                        <div class="riepp-request-affiliated-select-value" data-placeholder="">противодействие техногенным, биогенным, социокультурным, информационным угрозам, терроризму</div>
+                                        <div class="riepp-request-affiliated-select-list">
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506128" /><span>цифровые технологии, роботизированные системы, новые материалы, большие данные, машинное обучение, искусственный интеллект</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506129" /><span>экологически чистая и ресурсосберегающая энергетика, глубокая переработка углеводородного сырья, новые источники энергии</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506130" /><span>персонализированная медицина, высокотехнологичное здравоохранение и технологии здоровьесбережения</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506131" /><span>экологически чистое агро- и аквахозяйство, защита сельскохозяйственных растений и животных, безопасные продукты питания</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506132" checked="checked" /><span>противодействие техногенным, биогенным, социокультурным, информационным угрозам, терроризму</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506133" /><span>интеллектуальные транспортные и телекоммуникационные системы, освоение космического и воздушного пространства, Мирового океана, Арктики и Антарктики</span></label>
+                                            <label><input type="checkbox" name="pri[]" class="required" value="506134" /><span>ответ на большие вызовы с учетом взаимодействия человека и природы, человека и технологий, социальных институтов</span></label>
+                                        </div>
+                                    </div>
+                                </td>
 							</tr>
 							<tr>
 								<td>Дата начала проекта*</td>
-								<td><input type="text" id="date1" name="date1" value="21.11.2019" placeholder="дд.мм.гггг" required="true" style="width:80%" onkeydown="return false;"/>
-<a href="#" title="Выбрать дату в календаре" onclick="BX.calendar({node:this, field:'date1', form: '', bTime: false, currentTime: '1578499530', bHideTime: true});return false;" style="border-bottom:none; margin-left:3px;"><i class="fa fa-calendar" style="font-size:19px;color:grey;margin-right:-10px;"></i></a>
+								<td><div class="input-date"><input class="inp" type="text" id="date1" name="date1" value="21.11.2019" placeholder="дд.мм.гггг" required="true" />
+</div>
 
 </td>
 							</tr>
 							<tr>
 								<td>Дата завершения проекта*</td>
-								<td><input type="text" id="date2" name="date2" value="23.11.2019" placeholder="дд.мм.гггг" required="true" style="width:80%" onkeydown="return false;"/>
-<a href="#" title="Выбрать дату в календаре" onclick="BX.calendar({node:this, field:'date2', form: '', bTime: false, currentTime: '1578499530', bHideTime: true});return false;" style="border-bottom:none; margin-left:3px;"><i class="fa fa-calendar" style="font-size:19px;color:grey;margin-right:-10px;"></i></a>
-
+								<td><div class="input-date"><input class="inp" type="text" id="date2" name="date2" value="23.11.2019" placeholder="дд.мм.гггг" required="true" />
+</div>
 </td>
 							</tr>
 							<tr>
 								<td>Тип поддержки*</td>
 								<td>
-								<select name="type"><option value = '1133'> коллективная</option><option value = '1132' selected> индивидуальная</option></select>								</td>
+                                    <div class="riepp-request-affiliated-select">
+                                        <div class="riepp-request-affiliated-select-value" data-placeholder="">индивидуальная</div>
+                                        <div class="riepp-request-affiliated-select-list">
+                                            <label><input type="radio" class="required" name="type" value="1133" /><span>коллективная</span></label>
+                                            <label><input type="radio" class="required" name="type" value="1132" checked="checked" /><span>индивидуальная</span></label>
+                                        </div>
+                                    </div>
+                                </td>
 							</tr>
 							<tr>
 								<td>Вид поддержки</td>
-								<td><select name="vid[]" multiple class="mselect inp">
-								<option value="674142">проведение исследований<option value="674143" selected>организация конференций, круглых столов, семинаров<option value="674144">подготовка публикации<option value="674145" selected>подготовка монографии								</select></td>
+								<td>
+                                    <div class="riepp-request-affiliated-select">
+                                        <div class="riepp-request-affiliated-select-value" data-placeholder="">организация конференций, круглых столов, семинаров</div>
+                                        <div class="riepp-request-affiliated-select-list">
+                                            <label><input type="checkbox" name="vid[]" value="674142" /><span>проведение исследований</span></label>
+                                            <label><input type="checkbox" name="vid[]" value="674143" checked="checked" /><span>организация конференций, круглых столов, семинаров</span></label>
+                                            <label><input type="checkbox" name="vid[]" value="674144" /><span>подготовка публикации</span></label>
+                                            <label><input type="checkbox" name="vid[]" value="674145" /><span>подготовка монографии</span></label>
+                                        </div>
+                                    </div>
+                                </td>
 							</tr>
 							<tr>
 								<td>Инструмент поддержки*</td>
-								<td><select name="instr[]" multiple required class="mselect inp">
-																<option value="674146" selected>стипендия<option value="674147" selected>премия<option value="674148" selected>грант<option value="674149">субсидия<option value="674150">грант в форме субсидии								</select></td>
+								<td>
+                                    <div class="riepp-request-affiliated-select">
+                                        <div class="riepp-request-affiliated-select-value" data-placeholder="">стипендия</div>
+                                        <div class="riepp-request-affiliated-select-list">
+                                            <label><input type="checkbox" name="instr[]" class="required" value="674146" checked="checked" /><span>стипендия</span></label>
+                                            <label><input type="checkbox" name="instr[]" class="required" value="674147" /><span>премия</span></label>
+                                            <label><input type="checkbox" name="instr[]" class="required" value="674148" /><span>грант</span></label>
+                                            <label><input type="checkbox" name="instr[]" class="required" value="674149" /><span>субсидия</span></label>
+                                            <label><input type="checkbox" name="instr[]" class="required" value="674150" /><span>грант в форме субсидии</span></label>
+                                        </div>
+                                    </div>
+                                </td>
 							</tr>
 
-						</table>
+						</tbody>
+                        </table>
 					<div class="form_sub">
 						<input class="btn red btn_sm" type="submit" name="edit" id="form-sub-send" value="Сохранить">
 					</div>
@@ -802,23 +848,60 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 	</div></div>
 
 	<footer>
+        <div class="footer-logos">
+            <div class="wrap">
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-01.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-02.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-03.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-04.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-05.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-06.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-07.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-08.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-09.png" alt="" /></a></div>
+            </div>
+        </div>
 		<div class="wrap">
-			<div class="logo_bot"><img src="local/layout/images/gerb.png" /></div>
-			<div class="copy">
-				Реестр разработан при поддержке <a href="https://minobrnauki.gov.ru/" target="_blank">Минобрнауки России</a>
-				<div class="bot_tel"></div>
-			</div>
-		<span class="show_bot_nav"><span></span></span>
-		<div class="clear show760"></div>
-			<nav class="nav_bot">
+			<div class="footer-text">
+                <div class="footer-assistance">Реестр разработан при поддержке Минобрнауки России.</div>
+                <div class="footer-copy">© Реализация и сопровождение: ФГБУ "РИЭПП".</div>
+            </div>
+            <div class="footer-informer">
+                <!-- Yandex.Metrika informer -->
+                <a href="https://metrika.yandex.ru/stat/?id=44200049&amp;from=informer"
+                target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44200049/3_0_EFEFEFFF_EFEFEFFF_0_pageviews"
+                style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44200049" data-lang="ru" /></a>
+                <!-- /Yandex.Metrika informer -->
 
-			</nav>
-			<nav class="nav_bot nav_bot2">
+                <!-- Yandex.Metrika counter -->
+                <script type="text/javascript">
+                    (function (d, w, c) {
+                        (w[c] = w[c] || []).push(function() {
+                            try {
+                                w.yaCounter44200049 = new Ya.Metrika({
+                                    id:44200049,
+                                    clickmap:true,
+                                    trackLinks:true,
+                                    accurateTrackBounce:true
+                                });
+                            } catch(e) { }
+                        });
 
-			</nav>
-			<nav class="nav_bot nav_bot3">
+                        var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () { n.parentNode.insertBefore(s, n); };
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-			</nav>
+                        if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f, false);
+                        } else { f(); }
+                    })(document, window, "yandex_metrika_callbacks");
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/44200049" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                <!-- /Yandex.Metrika counter -->
+            </div>
 			<div class="clear"></div>
 		</div>
 	</footer>

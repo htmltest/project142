@@ -58,11 +58,16 @@ bxSession.Expand(1800, 'd8d32ffa8c72a6e60775bd9b6570f637', true, '60c7d5b54e32a4
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	
                 <link rel="stylesheet" href="local/layout/lk/css/style.template.css?71618" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?52420" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?30957" />
-        <link rel="stylesheet" href="local/layout/lk/css/win.css?20874" />
-	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?15286" />
-	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?78296" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?55726" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?20832" />
+        <link rel="stylesheet" href="local/layout/lk/css/win.css?30980" />
+	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?36330" />
+	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?41745" />
+        <link rel="stylesheet" href="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="local/layout/lk/js/air-datepicker/datepicker.css" />
+        <script src="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="local/layout/lk/js/mask/jquery.mask.min.js"></script>
+        <script src="local/layout/lk/js/air-datepicker/datepicker.min.js"></script>
 				<script src="local/layout/lk/js/tree.js"></script>
 		<script src="local/layout/lk/js/win.js"></script>
 		<script src="local/layout/lk/js/change_pass.js"></script>
@@ -76,24 +81,15 @@ bxSession.Expand(1800, 'd8d32ffa8c72a6e60775bd9b6570f637', true, '60c7d5b54e32a4
 
 			<div class="top">
 				<div class="wrap">
-					<div class="logo"><a href="/"><img src="local/layout/images/logo.png" /></a></div><div class='slogan'>Личный кабинет научного фонда</div>
+					<div class="logo"><a href="/"><img src="local/layout/lk/images/logo.png" /></a></div><div class='slogan'><span>Реестр фондов</span> поддержки научной, научно-технической, инновационной деятельности</div>
 					<span class="show_nav"><span></span></span>
-										<div class="top_user">
-						<a href="/personal/">Кирилл Калюжный (fund_user)</a>
-						<ul>
-							<li><a href="/personal/profile/">Профиль</a></li>
-							<li><a href="/personal/contest/">Конкурсы</a></li>
-							<li><a href="/personal/project/">Конкурсные проекты</a></li>
-							<li><a href="/personal/participant/">Участники</a></li>
-							<li class="top_user_out"><a href="/index.php?logout=yes">Выход</a></li>
-						</ul>
-					</div>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</header>
 		<div class="wrap">
 			<section id="content"><div class="cabinet-menu">
+	<div><a href="#">Рабочий стол</a></div>
 	<div class="active"><a href="/personal/profile/">Профиль</a></div>
 	<div><a href="/personal/contest/">Конкурсы</a></div>
 	<div><a href="/personal/project/">Конкурсные проекты</a></div>
@@ -107,7 +103,7 @@ bxSession.Expand(1800, 'd8d32ffa8c72a6e60775bd9b6570f637', true, '60c7d5b54e32a4
 				<a href="/personal/profile/" title="Профиль" >Профиль</a> <span></span> Редактирование профиля</div>
 <div class="back-mobile"><a href="/personal/profile/"><span><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z" /></svg></span>Профиль</a></div>
 <div class="entry">
-	<div class="riepp-request-header">
+	<div class="cabinet-header">
 		<h1>Профиль</h1>
 	</div>
 	<div class="cabinet">
@@ -154,23 +150,60 @@ bxSession.Expand(1800, 'd8d32ffa8c72a6e60775bd9b6570f637', true, '60c7d5b54e32a4
 	</div></div>
 
 	<footer>
+        <div class="footer-logos">
+            <div class="wrap">
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-01.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-02.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-03.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-04.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-05.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-06.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-07.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-08.png" alt="" /></a></div>
+                <div class="footer-logos-item"><a href="#" target="_blank"><img src="files/footer-logo-09.png" alt="" /></a></div>
+            </div>
+        </div>
 		<div class="wrap">
-			<div class="logo_bot"><img src="local/layout/images/gerb.png" /></div>
-			<div class="copy">
-				Реестр разработан при поддержке <a href="https://minobrnauki.gov.ru/" target="_blank">Минобрнауки России</a>
-				<div class="bot_tel"></div>
-			</div>
-		<span class="show_bot_nav"><span></span></span>
-		<div class="clear show760"></div>
-			<nav class="nav_bot">
+			<div class="footer-text">
+                <div class="footer-assistance">Реестр разработан при поддержке Минобрнауки России.</div>
+                <div class="footer-copy">© Реализация и сопровождение: ФГБУ "РИЭПП".</div>
+            </div>
+            <div class="footer-informer">
+                <!-- Yandex.Metrika informer -->
+                <a href="https://metrika.yandex.ru/stat/?id=44200049&amp;from=informer"
+                target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/44200049/3_0_EFEFEFFF_EFEFEFFF_0_pageviews"
+                style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="44200049" data-lang="ru" /></a>
+                <!-- /Yandex.Metrika informer -->
 
-			</nav>
-			<nav class="nav_bot nav_bot2">
+                <!-- Yandex.Metrika counter -->
+                <script type="text/javascript">
+                    (function (d, w, c) {
+                        (w[c] = w[c] || []).push(function() {
+                            try {
+                                w.yaCounter44200049 = new Ya.Metrika({
+                                    id:44200049,
+                                    clickmap:true,
+                                    trackLinks:true,
+                                    accurateTrackBounce:true
+                                });
+                            } catch(e) { }
+                        });
 
-			</nav>
-			<nav class="nav_bot nav_bot3">
+                        var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () { n.parentNode.insertBefore(s, n); };
+                        s.type = "text/javascript";
+                        s.async = true;
+                        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-			</nav>
+                        if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f, false);
+                        } else { f(); }
+                    })(document, window, "yandex_metrika_callbacks");
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/44200049" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                <!-- /Yandex.Metrika counter -->
+            </div>
 			<div class="clear"></div>
 		</div>
 	</footer>

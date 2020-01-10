@@ -1,31 +1,79 @@
 .section_tree {
 	margin: 0;
-	padding: 0.5em;
-	box-shadow: inset 0 1px 3px #ddd;
-	border-radius: 4px;
-	vertical-align: middle;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-}
-.section_tree ul, .section_tree ol {
-	display: block;
-	list-style: none;
-	margin: 0 0 9px 25px;
 	padding: 0;
 }
-.section_tree li {
+.entry .section_tree ul, .entry .section_tree ol {
+    font-weight: 300;
+    color: #4e4e4e;
+	display: block;
+	list-style: none;
 	margin: 0;
+	padding: 0;
+}
+.entry .section_tree ul ul, .entry .section_tree ol ol {
+    margin-left: 22px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.entry .section_tree ul ul::before {
+    content:"";
+    display:block;
+    position:absolute; left:-17px; top:0; bottom:0; width:1px; background:#BCBCBC;
+}
+
+.entry .section_tree ul ul ul::before {
+    top: -16px
+}
+.entry .section_tree ul ul ul, .entry .section_tree ol ol ol {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.entry .section_tree li {
+	margin: 6px 0;
 	list-style:none;
+    padding: 0 0 0 22px;
+}
+
+.entry .section_tree li.active {
+    font-weight: normal
 }
 .section_tree ul > li::before{
-background-color:rgba(0,0,0,0);
+ display: none;
 }
 .section_tree label {
 	display: block;
 	cursor: pointer;
 }
+
+.section_tree label span {
+	display: block;
+    position: relative;
+    padding: 0 0 0 5px;
+}
+
+.section_tree label span::before {
+    content:""; display:block; position:absolute; left:-22px; top:0; width:19px; height:19px; border:1px solid #c2c2c2; background:url(../images/checkbox-mini.svg) no-repeat -999px -999px
+}
+
+.section_tree label input:checked+span::before {
+    background-position: center
+}
+
+.section_tree label input {
+    display: none;
+}
+.section_tree .fa {display:block; position:absolute; left:0; top:6px; width:10px; height:10px; font-size:0; line-height:0; letter-spacing:-1px}
+.section_tree .fa-plus::before {content:""; display:block; position:absolute; left:50%; top:50%; width:2px; height:10px; background:#ea574e; border-radius:1px; margin:-5px 0 0 -1px}
+.section_tree .fa-plus::after {content:""; display:block; position:absolute; left:50%; top:50%; width:10px; height:2px; background:#ea574e; border-radius:1px; margin:-1px 0 0 -5px}
+.section_tree .fa-minus::before {content:""; display:block; position:absolute; left:50%; top:50%; width:10px; height:2px; background:#ea574e; border-radius:1px; margin:-1px 0 0 -5px}
 .selected_tree_item {
-	margin: 0 0.5em 1em 0.5em;
+	font-weight: 300;
+    color: #4e4e4e;
+    border-bottom: 1px solid #E1E1E1;
+    padding:0 0 15px 0;
+    margin: 0 0 18px 0;
+}
+.selected_tree_item_label {
+    font-weight: normal;
+    color: #353535;
 }

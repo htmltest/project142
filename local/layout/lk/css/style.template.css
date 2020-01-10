@@ -81,24 +81,28 @@ body {
 	}
 
 .wrap {
-	width: 1170px;
+	max-width: 1166px;
 	margin: 0 auto;
 	text-align: left;
 	position: relative;
 	}
 
 .wrap .slogan{
-	display: block;
-    position: absolute;
-    left: 94px;
-    top: 16px;
-    width: 60%;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 18px;
-    opacity: 1;
-    transition: opacity 0.2s 0.2s;
+	float: left;
+    color: #737373;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 11px 0 0 0;
+    letter-spacing:0.03em;
+}
+
+.wrap .slogan span {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #ea574e;
 }
 
 .wrap_h {
@@ -107,7 +111,7 @@ body {
 	}
 
 .wrap_in {
-	padding: 0 0 240px 0;
+	padding: 0 0 200px 0;
 	}
 
 input, textarea {
@@ -629,28 +633,14 @@ label.error {
 
 /* HEADER */
 
-header {
-	height: 135px;
-	position: relative;
-	z-index: 200;
-	}
-
 .top{
-	height: 64px;
-	padding: 24px 0 22px 0;
-	background: #ca3c33;
-	}
-
+    padding: 21px 0 26px 0;
+}
 
 .logo{
-	float: left;
-	width: 247px;
-	}
-
-.logo img{
-	vertical-align: bottom;
-	height: 64px;
-	}
+    float: right;
+    line-height: 0;
+}
 
 .top_lk{
 	float: right;
@@ -1026,10 +1016,6 @@ header {
 
 /* POSTS */
 
-#content {
-	padding: 39px 0 60px 0;
-	}
-
 .bread {
 	padding: 0 0 17px 0;
 	color: #7f7f7f;
@@ -1054,12 +1040,19 @@ header {
 /* FOOTER */
 
 footer {
-    min-height: 170px;
-    margin: -240px 0 0 0;
-	padding: 35px 0;
+    min-height: 126px;
+    margin: -126px 0 0 0;
 	position: relative;
-	background: #e2e2e2;
+	background: #dbdbdb;
 	}
+
+.footer-logos {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; background:#fff; height:68px}
+.footer-logos-item {display:inline-block; vertical-align:top; padding:0 15px; line-height:68px}
+.footer-logos-item img {vertical-align:middle}
+
+.footer-text {float:left; font-size:11px; line-height:15px; color:#737373; margin:11px 0 0 0}
+.footer-copy {margin:9px 0 0 0}
+.footer-informer {float:right; line-height:0; padding:11px 0 0 0}
 
 .logo_bot{
 	float: left;
