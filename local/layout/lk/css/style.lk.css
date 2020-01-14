@@ -85,7 +85,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 
 @media (max-width:1020px) {
     .entry .table_container {width:auto; overflow:visible}
-    .entry .cabinet-content table {display:block; width:auto; line-height:19px}
+    .entry .cabinet-content table {display:block; width:auto; line-height:19px; border-bottom:1px solid #e1e1e1}
     .entry .cabinet-content table tbody {display:block}
     .entry .cabinet-content table thead {display:none}
     .entry .cabinet-content table.table_profile thead {display:block}
@@ -95,7 +95,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .entry .cabinet-content table.table_profile thead tr {display:block; border:none; padding:3px 0 0 0; margin-bottom:29px}
     .entry .cabinet-content table.table_profile thead tr th {display:block; border:none; padding:0; text-transform:none; background:none; font-size:24px; line-height:28px; color:#4a4a4a; font-weight:normal; letter-spacing:0; width:auto}
     .entry .cabinet-content table tr td {display:inline; vertical-align:top; padding:0; border:none; line-height:19px}
-    .entry .cabinet-content table tr td:last-child {border-right:none !important}
+    .entry .cabinet-content table tr td:last-child {border-right:none !important; padding-bottom:10px}
     .cabinet-content .table_container table tr td:last-child {border-right:none !important}
     .entry .cabinet-content table tr td:first-child {padding-left:0; padding-right:0; font-weight:bold}
     .entry .cabinet-content table.table-expert-requests tr td:first-child {display:block; font-weight:normal; font-size:20px; line-height:24px; padding-bottom:15px}
@@ -723,6 +723,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .table-profile-dashboard-item-prop-title {display:none}
 
 @media (max-width:1020px) {
+    .entry .cabinet-content table.table-profile-dashboard {border-bottom:1px solid #e1e1e1}
     .entry .cabinet-content table.table-profile-dashboard tr {position:relative; padding:73px 25px 30px 25px}
     .entry .cabinet-content table.table-profile-dashboard tr::after {content:""; display:block; clear:both}
     .entry .cabinet-content table.table-profile-dashboard tr td.table-profile-dashboard-item-title {display:block; padding-top:0; padding-bottom:24px; font-size:20px; line-height:30px}
@@ -736,7 +737,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .entry .cabinet-content table.table_edit td:first-child {width:40%; color:#555; padding:30px}
 
 @media (max-width:1020px) {
-    .entry .cabinet-content table.table_edit td {padding:0 5px 20px 5px}
+    .entry .cabinet-content table.table_edit td {padding:0 5px 20px 5px !important}
     .entry .cabinet-content table.table_edit td:first-child {width:auto; color:#737373; font-size:16px; line-height:19px; font-weight:normal; padding:0 5px 16px 5px}
 }
 
