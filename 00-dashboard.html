@@ -5,7 +5,7 @@
 
 	<meta charset="UTF-8" />
 	<title>Личный кабинет</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="viewport" content="width=device-width">
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
 	<meta name="HandheldFriendly" content="True" />
@@ -57,17 +57,19 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 	<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-                <link rel="stylesheet" href="local/layout/lk/css/style.template.css?33215" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?55726" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?20832" />
-        <link rel="stylesheet" href="local/layout/lk/css/win.css?30980" />
-	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?36330" />
-	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?41745" />
+                <link rel="stylesheet" href="local/layout/lk/css/style.template.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.add.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/win.css" />
+	    <link rel="stylesheet" href="local/layout/lk/css/tree.css" />
+	    <link rel="stylesheet" href="local/layout/lk/css/popups.css" />
         <link rel="stylesheet" href="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
         <link rel="stylesheet" href="local/layout/lk/js/air-datepicker/datepicker.css" />
+        <link rel="stylesheet" href="local/layout/lk/js/slick/slick.css" />
         <script src="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="local/layout/lk/js/mask/jquery.mask.min.js"></script>
         <script src="local/layout/lk/js/air-datepicker/datepicker.min.js"></script>
+        <script src="local/layout/lk/js/slick/slick.min.js"></script>
 				<script src="local/layout/lk/js/tree.js"></script>
 		<script src="local/layout/lk/js/win.js"></script>
 		<script src="local/layout/lk/js/change_pass.js"></script>
@@ -99,7 +101,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 
 
 <div class="bread">Национальный благотворительный фонд</div>
-<div class="back-mobile"><a href=""><span><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z" /></svg></span></a></div>
+<div class="back-mobile"><a href=""><span><svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.47177 11.5L14 21.1343L12.5323 23L-5.02681e-07 11.5L12.5323 -5.47802e-07L14 1.86569L3.47177 11.5Z" /></svg></span>Национальный благотворительный фонд</a></div>
 <div class="entry">
 	<div class="cabinet-header">
 		<h1>Рабочий стол</h1>
@@ -113,7 +115,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 <a href="project/add.php"  class='profile-btn'>Добавить проект</a>
 <a href="participant/add.php"  class='profile-btn'>Добавить участника</a>
 
-                <div class="cabinet-content-header">
+                <div class="cabinet-content-header no-mobile">
                     <h2>Конкурсы</h2>
                     <div class="pager">
                         <div class="pager-content">
@@ -142,24 +144,24 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 						<tbody>
 
 							<tr>
-							<td><a href="contest/detail.php?id=675405">Новый и динамично развивающийся конкурс</a></td>
-							<td>2020</td>
-							<td>2</td>
-							<td>1</td>
+							<td class="table-profile-dashboard-item-title"><a href="contest/detail.php?id=675405">Новый и динамично развивающийся конкурс</a></td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Год</div>2020</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Поданные заявки</div>2</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Выигравшие заявки</div>1</td>
 							<td><div class="cabinet-riepp-requests-status cabinet-riepp-requests-status-3">Опубликован</div></td>
 							</tr>
 							<tr>
-							<td><a href="contest/detail.php?id=675413">Современный конкурс по биотехнологиям с очень длинным названием на несколько строк для тестирования</a></td>
-							<td>2000</td>
-							<td>1</td>
-							<td>1</td>
+							<td class="table-profile-dashboard-item-title"><a href="contest/detail.php?id=675413">Современный конкурс по биотехнологиям с очень длинным названием на несколько строк для тестирования</a></td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Год</div>2000</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Поданные заявки</div>1</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Выигравшие заявки</div>1</td>
 							<td><div class="cabinet-riepp-requests-status cabinet-riepp-requests-status-1">Закрыт</div></td>
 							</tr>
 							<tr>
-							<td><a href="contest/detail.php?id=675737">Конкурс инопланетных технологий</a></td>
-							<td>2020</td>
-							<td>150</td>
-							<td>15</td>
+							<td class="table-profile-dashboard-item-title"><a href="contest/detail.php?id=675737">Конкурс инопланетных технологий</a></td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Год</div>2020</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Поданные заявки</div>150</td>
+							<td class="table-profile-dashboard-item-prop"><div class="table-profile-dashboard-item-prop-title">Выигравшие заявки</div>15</td>
 							<td><div class="cabinet-riepp-requests-status cabinet-riepp-requests-status-2">Проходит</div></td>
 							</tr>						</tbody>
 					</table>

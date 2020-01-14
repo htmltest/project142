@@ -10,15 +10,36 @@
 	margin: 0;
 	padding: 0;
 }
+
+@media (max-width:1020px) {
+    .entry .section_tree ul, .entry .section_tree ol {
+        font-size: 20px; line-height:24px
+    }
+}
+
 .entry .section_tree ul ul, .entry .section_tree ol ol {
     margin-left: 22px;
     margin-bottom: 16px;
     position: relative;
 }
+
+@media (max-width:1020px) {
+    .entry .section_tree ul ul, .entry .section_tree ol ol {
+        margin-left: 30px;
+        margin-bottom: 35px;
+    }
+}
+
 .entry .section_tree ul ul::before {
     content:"";
     display:block;
     position:absolute; left:-17px; top:0; bottom:0; width:1px; background:#BCBCBC;
+}
+
+@media (max-width:1020px) {
+    .entry .section_tree ul ul::before {
+        left: -23px
+    }
 }
 
 .entry .section_tree ul ul ul::before {
@@ -34,8 +55,21 @@
     padding: 0 0 0 22px;
 }
 
+@media (max-width:1020px) {
+    .entry .section_tree li {
+        margin: 14px 0;
+        padding: 0 0 0 30px;
+    }
+}
+
 .entry .section_tree li.active {
     font-weight: normal
+}
+
+@media (max-width:1020px) {
+.entry .section_tree li.active {
+    color: #000;
+}
 }
 .section_tree ul > li::before{
  display: none;
@@ -55,6 +89,10 @@
     content:""; display:block; position:absolute; left:-22px; top:0; width:19px; height:19px; border:1px solid #c2c2c2; background:url(../images/checkbox-mini.svg) no-repeat -999px -999px
 }
 
+@media (max-width:1020px) {
+    .section_tree label span::before {top:2px; left:-30px}
+}
+
 .section_tree label input:checked+span::before {
     background-position: center
 }
@@ -66,6 +104,14 @@
 .section_tree .fa-plus::before {content:""; display:block; position:absolute; left:50%; top:50%; width:2px; height:10px; background:#ea574e; border-radius:1px; margin:-5px 0 0 -1px}
 .section_tree .fa-plus::after {content:""; display:block; position:absolute; left:50%; top:50%; width:10px; height:2px; background:#ea574e; border-radius:1px; margin:-1px 0 0 -5px}
 .section_tree .fa-minus::before {content:""; display:block; position:absolute; left:50%; top:50%; width:10px; height:2px; background:#ea574e; border-radius:1px; margin:-1px 0 0 -5px}
+
+@media (max-width:1020px) {
+    .section_tree .fa {width:14px; height:14px; top:6px}
+    .section_tree .fa-plus::before {height:14px; margin:-7px 0 0 -1px}
+    .section_tree .fa-plus::after {width:14px; margin:-1px 0 0 -7px}
+    .section_tree .fa-minus::before {width:14px; margin:-1px 0 0 -7px}
+}
+
 .selected_tree_item {
 	font-weight: 300;
     color: #4e4e4e;
@@ -76,4 +122,20 @@
 .selected_tree_item_label {
     font-weight: normal;
     color: #353535;
+}
+
+@media (max-width:1020px) {
+.selected_tree_item {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom:none;
+    padding-bottom:0;
+    margin-bottom:38px;
+}
+.selected_tree_item_label {
+    display:block;
+    font-size:18px;
+    line-height:27px;
+    margin:8px 0 0 0;
+}
 }

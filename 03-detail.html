@@ -5,7 +5,7 @@
 
 	<meta charset="UTF-8" />
 	<title>Очень динамичный проект, который должен затмить всех предшественников</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="viewport" content="width=device-width">
 	<meta name="Keywords" content="" />
 	<meta name="Description" content="" />
 	<meta name="HandheldFriendly" content="True" />
@@ -57,17 +57,19 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 	<![endif]-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-                <link rel="stylesheet" href="local/layout/lk/css/style.template.css?83442" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.add.css?55726" />
-        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css?20832" />
-        <link rel="stylesheet" href="local/layout/lk/css/win.css?30980" />
-	    <link rel="stylesheet" href="local/layout/lk/css/tree.css?36330" />
-	    <link rel="stylesheet" href="local/layout/lk/css/popups.css?41745" />
+                <link rel="stylesheet" href="local/layout/lk/css/style.template.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.add.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/style.lk.css" />
+        <link rel="stylesheet" href="local/layout/lk/css/win.css" />
+	    <link rel="stylesheet" href="local/layout/lk/css/tree.css" />
+	    <link rel="stylesheet" href="local/layout/lk/css/popups.css" />
         <link rel="stylesheet" href="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
         <link rel="stylesheet" href="local/layout/lk/js/air-datepicker/datepicker.css" />
+        <link rel="stylesheet" href="local/layout/lk/js/slick/slick.css" />
         <script src="local/layout/lk/js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="local/layout/lk/js/mask/jquery.mask.min.js"></script>
         <script src="local/layout/lk/js/air-datepicker/datepicker.min.js"></script>
+        <script src="local/layout/lk/js/slick/slick.min.js"></script>
 				<script src="local/layout/lk/js/tree.js"></script>
 		<script src="local/layout/lk/js/win.js"></script>
 		<script src="local/layout/lk/js/change_pass.js"></script>
@@ -107,7 +109,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
         <h1>Очень динамичный проект, который должен затмить всех предшественников</h1>
     </div>
 <blockquote class='success_info'>
-<b>Спасибо, </b><br />
+<b>Спасибо, </b>
 <p>ваша заявка от 18.06.2019 18:40:03 принята! Заявке присвоен номер <b>NCMU_4_1</b></p>
 <a href="#" class="success_info-close"></a>
 </blockquote>
@@ -127,7 +129,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
                 <tbody>
 					<tr>
 						<td>Конкурс</td>
-						<td>Новый и динамично развивающийся конкурс						</td>
+						<td><a href="#">Новый и динамично развивающийся конкурс</a></td>
 					</tr>
 					<tr>
 						<td>Название проекта</td>
@@ -176,6 +178,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 
 				<div class="tabs">
 					<div class='request_tabs'>
+                        <div class="tabs__current">Участники проекта</div>
 						<ul class="tabs__caption">
 							<li class="active">Участники проекта</li>
 							<li>Финансирование проекта</li>
@@ -209,6 +212,7 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
                         <div class="people-upd">
 
 			<table>
+            <thead>
 			<tr>
 				<th>ФИО</th>
 				<!--<th>Идентификатор ORCID</th>-->
@@ -216,47 +220,49 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 				<th>Тип участия</th>
 				<th>Управление</th>
 			</tr>
+            </thead>
+            <tbody>
 
 			<tr>
-				<td><a href="../participant/detail.php?id=675419">Ахметзянова Орхидея Степановна</a></td>
+				<td><div class="tabs-item-title">ФИО</div><a href="../participant/detail.php?id=675419">Ахметзянова Орхидея Степановна</a></td>
 				<!--<td>0000-0002-9075-5102</td>-->
-				<td>студент</td>
-				<td>руководитель</td>
-				<td><a href="del.php?del_p=676774&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
+				<td><div class="tabs-item-title">Статус</div>студент</td>
+				<td><div class="tabs-item-title">Тип участия</div>руководитель</td>
+				<td><div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="del.php?del_p=676774&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></div></td>
 
 			</tr>
 			<tr>
-				<td><a href="../participant/detail.php?id=675418">Баландина Инга Викторовна</a></td>
+				<td><div class="tabs-item-title">ФИО</div><a href="../participant/detail.php?id=675418">Баландина Инга Викторовна</a></td>
 				<!--<td>0000-0002-5559-7777</td>-->
-				<td>иной</td>
-				<td>руководитель</td>
-				<td><a href="del.php?del_p=676751&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
+				<td><div class="tabs-item-title">Статус</div>иной</td>
+				<td><div class="tabs-item-title">Тип участия</div>руководитель</td>
+				<td><div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="del.php?del_p=676751&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></div></td>
 
 			</tr>
 			<tr>
-				<td><a href="../participant/detail.php?id=675417">Виноградова Харитина Яковлевна</a></td>
+				<td><div class="tabs-item-title">ФИО</div><a href="../participant/detail.php?id=675417">Виноградова Харитина Яковлевна</a></td>
 				<!--<td>0000-0002-5559-6666</td>-->
-				<td>иной</td>
-				<td>руководитель</td>
-				<td><a href="del.php?del_p=676775&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
+				<td><div class="tabs-item-title">Статус</div>иной</td>
+				<td><div class="tabs-item-title">Тип участия</div>руководитель</td>
+				<td><div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="del.php?del_p=676775&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></div></td>
 
 			</tr>
 			<tr>
-				<td><a href="../participant/detail.php?id=675407">Гершвейн Моисей Абрахамович</a></td>
+				<td><div class="tabs-item-title">ФИО</div><a href="../participant/detail.php?id=675407">Гершвейн Моисей Абрахамович</a></td>
 				<!--<td>1234-4321-00</td>-->
-				<td>студент</td>
-				<td>руководитель</td>
-				<td><a href="del.php?del_p=676757&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
+				<td><div class="tabs-item-title">Статус</div>студент</td>
+				<td><div class="tabs-item-title">Тип участия</div>руководитель</td>
+				<td><div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="del.php?del_p=676757&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></div></td>
 
 			</tr>
 			<tr>
-				<td><a href="../participant/detail.php?id=675401">Дмитриев Александр Евгеньевич</a></td>
+				<td><div class="tabs-item-title">ФИО</div><a href="../participant/detail.php?id=675401">Дмитриев Александр Евгеньевич</a></td>
 				<!--<td>0000-0002-5559-3722</td>-->
-				<td>аспирант</td>
-				<td>исполнитель</td>
-				<td><a href="del.php?del_p=676599&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></td>
+				<td><div class="tabs-item-title">Статус</div>аспирант</td>
+				<td><div class="tabs-item-title">Тип участия</div>исполнитель</td>
+				<td><div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="del.php?del_p=676599&id=675396" onclick="if(confirm('Вы уверены, что хотите отвязать человека?'))return upd_span(this.getAttribute('href'),'people-upd'); else return false;"><span class="cabinet-list-item-del" title="Отвязать от проекта"></span></a></div></td>
 
-			</tr>	</table>						</div>
+			</tr>	</tbody></table>						</div>
 					</div>
 					</div>
 
@@ -282,24 +288,27 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 						<div class="finance-upd">
 
 		<table>
+        <thead>
 		<tr>
 			<th>Год отчетности</th>
 			<th>Размер финансирования</th>
 			<th>Управление</th>
 		</tr>
-	<tr><td>2020</td><td>1231231231231 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676765" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+        </thead>
+        <tbody>
+	<tr><td><div class="tabs-item-title">Год отчетности</div>2020</td><td><div class="tabs-item-title">Размер финансирования</div>1231231231231 тыс. рублей</td><td>
+		<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="finance.php?id=675396&edit=676765" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676765" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2019</td><td>234 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676766" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+		<a href="del.php?id=675396&del_f=676765" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr><tr><td><div class="tabs-item-title">Год отчетности</div>2019</td><td><div class="tabs-item-title">Размер финансирования</div>234 тыс. рублей</td><td>
+		<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="finance.php?id=675396&edit=676766" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676766" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2018</td><td>223442342 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676729" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+		<a href="del.php?id=675396&del_f=676766" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr><tr><td><div class="tabs-item-title">Год отчетности</div>2018</td><td><div class="tabs-item-title">Размер финансирования</div>223442342 тыс. рублей</td><td>
+		<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="finance.php?id=675396&edit=676729" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676729" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2017</td><td>220 тыс. рублей</td><td>
-		<a href="finance.php?id=675396&edit=676732" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+		<a href="del.php?id=675396&del_f=676729" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr><tr><td><div class="tabs-item-title">Год отчетности</div>2017</td><td><div class="tabs-item-title">Размер финансирования</div>220 тыс. рублей</td><td>
+		<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="finance.php?id=675396&edit=676732" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-		<a href="del.php?id=675396&del_f=676732" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr></table>						</div>
+		<a href="del.php?id=675396&del_f=676732" onclick="if(confirm('Вы уверены, что хотите удалить?')) return upd_span(this.getAttribute('href'),'finance-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr></tbody></table>						</div>
 					</div>
 					</div>
 
@@ -342,19 +351,22 @@ bxSession.Expand(1800, '7ec43a9852faab76812ef5340b377c59', true, 'be099b54660b92
 		});
 		  </script>
 	<table>
+    <thead>
 	<tr>
 		<th>Год отчетности</th>
 		<th>Тип научного результата</th>
 		<th>Идентификатор результата</th>
 		<th>Управление</th>
 	</tr>
-<tr><td>2019</td><td>- заявка на регистрацию базы данных<br></td><td>345345</td><td>
-	<a href="res.php?id=675396&edit=676836" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+    </thead>
+    <tbody>
+<tr><td><div class="tabs-item-title">Год отчетности</div>2019</td><td><div class="tabs-item-title">Тип научного результата</div>- заявка на регистрацию базы данных<br></td><td><div class="tabs-item-title">Идентификатор результата</div>345345</td><td>
+	<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="res.php?id=675396&edit=676836" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-	<a href="del.php?id=675396&del_r=676836" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr><tr><td>2018</td><td>- заявка на регистрацию базы данных<br>- заявка на регистрацию изобретения<br></td><td>56756756</td><td>
-	<a href="res.php?id=675396&edit=676837" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
+	<a href="del.php?id=675396&del_r=676836" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr><tr><td><div class="tabs-item-title">Год отчетности</div>2018</td><td><div class="tabs-item-title">Тип научного результата</div>- заявка на регистрацию базы данных<br>- заявка на регистрацию изобретения<br></td><td><div class="tabs-item-title">Идентификатор результата</div>56756756</td><td>
+	<div class="tabs-item-title">Управление</div><div class="tabs-item-ctrl"><a href="res.php?id=675396&edit=676837" class="window-link"><span class="cabinet-list-item-edit" title="редактировать"></span></a>
 
-	<a href="del.php?id=675396&del_r=676837" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></td></tr></table>						</div>
+	<a href="del.php?id=675396&del_r=676837" onclick="if(confirm('Вы уверены, что хотите удалить результат?'))return upd_span(this.getAttribute('href'),'res-upd'); else return false;"><span class="cabinet-list-item-del" title="удалить"></span></a></div></td></tr></tbody></table>						</div>
     </div>
 					</div>
 

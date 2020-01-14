@@ -87,6 +87,11 @@ body {
 	position: relative;
 	}
 
+@media (max-width:1020px) {
+    .wrap {padding:0 20px}
+}
+
+
 .wrap .slogan{
 	float: left;
     color: #737373;
@@ -97,12 +102,20 @@ body {
     letter-spacing:0.03em;
 }
 
+@media (max-width:1020px) {
+    .wrap .slogan {margin:-4px 0 0 17px; width:300px; font-size:14px; line-height:17px}
+}
+
 .wrap .slogan span {
     display: block;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     color: #ea574e;
+}
+
+@media (max-width:1020px) {
+    .wrap .slogan span {font-size:22px; line-height:31px; margin:0 0 1px 0}
 }
 
 .wrap_h {
@@ -113,6 +126,11 @@ body {
 .wrap_in {
 	padding: 0 0 200px 0;
 	}
+
+@media (max-width:1020px) {
+    .wrap_in {padding:0 0 376px 0}
+}
+
 
 input, textarea {
 	font-family: 'Roboto', sans-serif;
@@ -637,9 +655,18 @@ label.error {
     padding: 21px 0 26px 0;
 }
 
+@media (max-width:1020px) {
+    .top {padding:21px 0}
+}
+
 .logo{
     float: right;
     line-height: 0;
+}
+
+@media (max-width:1020px) {
+    .logo {float:left; width:50px}
+    .logo img {width:50px}
 }
 
 .top_lk{
@@ -826,35 +853,50 @@ label.error {
 .show_nav{
 	float: right;
 	display: none;
-	width: 49px;
-	height: 37px;
-	margin: 12px 21px 0 0;
+	width: 42px;
+	height: 42px;
+	margin: 6px 0 0 0;
 	position: relative;
 	cursor: pointer;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.04);
 	}
 
+@media (max-width:1020px) {
+    .show_nav {display:block}
+}
+
 .show_nav span, .show_nav:before, .show_nav:after{
-	content: " ";
+	content: "";
 	display: block;
-	width: 100%;
-	height: 5px;
-	background: #fff;
+	width: 20px;
+	height: 2px;
+	background: #ea574e;
 	position: absolute;
-	left: 0px;
+	left: 11px;
 	transition: all 0.3s 0.02s ease;
+    border-radius: 1px;
 	}
 
 .show_nav span{
-	top: 16px;
+	top: 14px;
 	}
 
 .show_nav:before {
-	top: 0px;
+	top: 20px;
 	}
 
 .show_nav:after {
-	top: 32px;
+	top: 26px;
 	}
+
+@media (max-width:1020px) {
+    .mobile-menu-open .show_nav {z-index:999}
+    .mobile-menu-open .show_nav span {display:none}
+    .mobile-menu-open .show_nav:before {top:20px; transform:rotate(45deg)}
+    .mobile-menu-open .show_nav:after {top:20px; transform:rotate(-45deg)}
+}
+
 
 .show_nav.open span{
 	display: none;
@@ -1046,13 +1088,37 @@ footer {
 	background: #dbdbdb;
 	}
 
-.footer-logos {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; background:#fff; height:68px}
+@media (max-width:1020px) {
+    footer {min-height:376px; margin:-376px 0 0 0; background:none}
+}
+
+.footer-logos {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; background:#fff; height:68px; white-space:nowrap; position:relative; overflow:hidden}
 .footer-logos-item {display:inline-block; vertical-align:top; padding:0 15px; line-height:68px}
 .footer-logos-item img {vertical-align:middle}
+
+@media (max-width:1199px) {
+    .footer-logos {height:191px; padding:18px 0 0 0; box-sizing:border-box}
+    .footer-logos-item {line-height:117px; width:25%; text-align:left; height:117px; padding:0 10px}
+    .footer-logos-item img,
+    .footer-logos .slick-slide img {display:inline-block; max-width:calc(100% - 20px)}
+    .footer-logos .slick-dots {margin:0; padding:0; list-style:none; position:absolute; left:0; right:0; bottom:0; text-align:center}
+    .footer-logos .slick-dots li {margin:0 0 0 24px; padding:0; display:inline-block; vertical-align:top; position:relative}
+    .footer-logos .slick-dots li::before {display:none}
+    .footer-logos .slick-dots li:first-child {margin:0}
+    .footer-logos .slick-dots li button {display:block; position:relative; width:16px; height:16px; border-radius:50%; border:3px solid #ea574e; background:transparent; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; font-size:0; line-height:0; text-indent:100px}
+    .footer-logos .slick-dots li.slick-active button {background:#ea574e}
+}
 
 .footer-text {float:left; font-size:11px; line-height:15px; color:#737373; margin:11px 0 0 0}
 .footer-copy {margin:9px 0 0 0}
 .footer-informer {float:right; line-height:0; padding:11px 0 0 0}
+
+@media (max-width:1199px) {
+    .footer-text {float:none; text-align:center; margin:0; font-size:18px; line-height:27px}
+    .footer-assistance {padding:0 90px; height:83px; background:#fff; margin:0 -20px}
+    .footer-copy {margin:0 -20px; padding:24px 90px 0 90px}
+    .footer-informer {display:none}
+}
 
 .logo_bot{
 	float: left;

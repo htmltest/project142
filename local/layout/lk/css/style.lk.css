@@ -3,12 +3,6 @@
 .cabinet-menu {margin:0; box-sizing:border-box; line-height:68px; height:71px; border-bottom:3px solid #ea574e; background:#fff}
 .cabinet-menu div a {line-height:68px}
 
-@media (max-width:1020px) {
-    .cabinet-menu {margin-top:-5px}
-    .cabinet-menu div a {padding:0 15px}
-    .cabinet-menu div:last-child a {border-right:none}
-}
-
 .bread {font-size:16px; line-height:19px; color:#585858; padding:0; margin:30px 0 0 0; letter-spacing:0.03em; white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
 .bread a {color:#000}
 .bread a:hover {color:#585858; text-decoration:none}
@@ -21,12 +15,11 @@
 .back-mobile {display:none}
 
 @media (max-width:1020px) {
-    .back-mobile {display:block; margin:23px 0 0 0}
-    .back-mobile a {display:inline-block; vertical-align:top; font-size:16px; line-height:35px; padding:0 0 0 42px; position:relative}
-    .back-mobile span {display:block; width:30px; height:35px; position:absolute; left:0; top:0; background:rgba(176, 191, 223, 0.22); border-radius:6px}
+    .back-mobile {display:block; margin:0}
+    .back-mobile a {display:inline-block; vertical-align:top; font-size:16px; line-height:35px; padding:0 0 0 42px; position:relative; letter-spacing:0.03em; color:#ea574e; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; width:100%; box-sizing:border-box}
+    .back-mobile span {display:block; width:30px; height:35px; position:absolute; left:0; top:0; background:rgba(234, 87, 78, 0.1); border-radius:6px}
     .back-mobile span svg {width:8px; height:13px; position:absolute; left:50%; top:50%; margin:-7px 0 0 -4px}
-    .back-mobile path {fill:#1c48a3}
-    .back-mobile a:hover path {fill:rgba(29, 54, 180, 0.5)}
+    .back-mobile path {fill:#ea574e}
 }
 
 blockquote.time_info {background:#fffee9; box-shadow:0px 0px 20px rgba(180, 205, 220, 0.21); border-top:none; margin:32px 0 0 0; padding:19px 56px 17px 56px; position:relative; font-size:14px; line-height:16px; color:#848484; letter-spacing:0.03em}
@@ -40,13 +33,16 @@ blockquote.time_info p b {font-weight:normal; color:#848484}
 }
 
 blockquote.success_info {background:rgba(120, 243, 100, 0.14); border-top:none; margin:27px 0 0 0; padding:19px 29px 17px 29px; position:relative; font-size:14px; line-height:16px; color:#848484; letter-spacing:0.03em}
-blockquote.success_info > b {font-weight:normal; color:#3c3c3c; font-size:16px; line-height:19px}
+blockquote.success_info > b {font-weight:normal; color:#3c3c3c; font-size:16px; line-height:19px; display:block}
 blockquote.success_info p {margin:0}
 blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .success_info-close {display:block; width:20px; height:20px; background:url(../images/time_info-close.svg) no-repeat; position:absolute; right:9px; top:9px}
 
 @media (max-width:1020px) {
     blockquote.time_info {margin:28px 0 0 0; padding:16px 66px 14px 66px}
+    blockquote.success_info {margin:34px 0 0 0; padding:15px 34px 13px 25px; font-size:17.2px; line-height:20px}
+    blockquote.success_info > b {font-size:19px; line-height:22px; margin-bottom:5px}
+    .success_info-close {width:18px; height:18px; background:url(../images/time_info-close-mobile.svg) no-repeat; right:10px; top:10px}
 }
 
 .entry {margin:44px 0 0 0}
@@ -58,8 +54,8 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .riepp-request-header .cabinet-vacancy-link {margin-left:35px; font-weight:normal; margin-top:-4px; max-width:none}
 
 @media (max-width:1020px) {
-    .entry {padding:25px 20px 75px 20px}
-    .entry h1 {margin:0; padding:0; border-bottom:none; font-size:24px; line-height:28px}
+    .entry {margin:0; padding:24px 0 60px 0}
+    .entry h1 {margin:0; padding:0; border-bottom:none; font-size:26px; line-height:30px}
     .riepp-request-header {margin:0; padding:0; border-bottom:none}
     .entry .riepp-request-header h1 {display:block}
     .entry .riepp-request-header-confirm h1 {display:inline-block}
@@ -70,12 +66,16 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .cabinet {margin:28px 0 0 0; background:#fff; padding:30px 40px 36px 40px}
 
 @media (max-width:1020px) {
-    .cabinet {padding:26px 0 0 0}
+    .cabinet {margin:32px -20px 0 -20px; padding:40px 20px 66px 20px}
 }
 
 .table_container {margin:37px 0 0 0}
 .cabinet-content {float:none; margin:0; width:auto}
 .cabinet-content form {margin:0; padding:0}
+
+@media (max-width:1020px) {
+    .table_container {margin:32px 0 0 0}
+}
 
 .entry .cabinet-content table {margin:0; width:100%}
 .entry .cabinet-content table tr th {color:#000; font-size:15.5px; font-weight:500; line-height:19px; padding:17px 30px 15px 30px; text-transform:none; background:rgba(252, 234, 231, 0.5); border:1px solid #e1e1e1; white-space:nowrap}
@@ -91,7 +91,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .entry .cabinet-content table.table_profile thead {display:block}
     .entry .cabinet-content table tr {display:block; border:1px solid #e1e1e1; padding:30px 20px; margin-bottom:-1px}
     .entry .cabinet-content table.table-expert-requests tr::after {content:""; display:block; clear:both}
-    .entry .cabinet-content table tbody tr:nth-child(odd) {background:rgba(28, 72, 163, 0.04)}
+    .entry .cabinet-content table tbody tr:nth-child(odd) {background:rgba(234, 87, 78, 0.04)}
     .entry .cabinet-content table.table_profile thead tr {display:block; border:none; padding:3px 0 0 0; margin-bottom:29px}
     .entry .cabinet-content table.table_profile thead tr th {display:block; border:none; padding:0; text-transform:none; background:none; font-size:24px; line-height:28px; color:#4a4a4a; font-weight:normal; letter-spacing:0; width:auto}
     .entry .cabinet-content table tr td {display:inline; vertical-align:top; padding:0; border:none; line-height:19px}
@@ -111,6 +111,11 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .entry .riepp-request-scores table tr td:first-child {display:block; font-weight:normal; font-size:20px; line-height:24px}
     .entry .riepp-request-scores table tr td:nth-child(2) {padding:0}
     .entry .riepp-request-scores table tr td:last-child {padding:0; height:0; margin:0}
+
+    .entry .cabinet-content table.table-expert-requests tr:nth-child(odd) {background:none}
+    .entry .cabinet-content table.table-expert-requests tr:nth-child(4n-3) {background:rgba(234, 87, 78, 0.04)}
+    .entry .cabinet-content table.table-expert-requests tr:nth-child(4n-2) {background:rgba(234, 87, 78, 0.04)}
+    .entry .cabinet-content table.table-expert-requests tr td.cabinet-projects-list-title {font-size:20px; line-height:30px; padding:10px 5px 11px 5px; float:none; width:auto; margin:0; font-weight:500}
 }
 
 .entry .form_sub {margin:30px 0 0 0; text-align:right; font-size:0; line-height:0; letter-spacing:-1px}
@@ -123,8 +128,9 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .entry .form_sub .btn.btn_sm.red:active {background:#ef7a72; color:#fff}
 
 @media (max-width:1020px) {
+    .entry .form_sub {margin:50px 0 0 0}
     .entry .form_sub .btn.btn_sm {display:block; width:100%}
-    .entry .form_sub .btn.btn_sm.red {margin:10px 0 0 0}
+    .entry .form_sub .btn.btn_sm.red {margin:10px 0 0 0; height:58px; line-height:56px; font-size:16px; text-transform:uppercase; letter-spacing:0.05em; font-weight:500; background:none; color:#EA574E; border:1px solid #EA574E}
 }
 
 .entry .jq-checkbox {margin:0 14px 0 0; width:24px; height:24px; box-sizing:border-box; border:2px solid #c1c1c1; border-radius:4px; vertical-align:-6px}
@@ -196,6 +202,8 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .pager-content {display:inline-block; vertical-align:top; float:none}
     .pager-content a,
     .pager-content span {width:41px; height:41px; line-height:39px}
+
+    .cabinet-content-header .pager {display:none}
 }
 
 .pager-right::after {content:""; display:block; clear:both}
@@ -231,7 +239,7 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .cabinet-riepp-requests-status-4 {background:rgba(163, 0, 255, 0.6); color:#3a3a3a}
 
 @media (max-width:1020px) {
-    .cabinet-riepp-requests-status {position:absolute; left:20px; top:30px}
+    .cabinet-riepp-requests-status {position:absolute; left:25px; top:30px}
 }
 
 .profile-value {font-weight:500}
@@ -240,6 +248,10 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .profile-btn-edit {margin-left:30px; padding:0 19px}
 .profile-btn-edit::before {width:13px; height:13px; background:url(../images/profile-btn-edit.svg) no-repeat; margin:-2px 9px 0 0}
 .profile-btn:hover {text-decoration:none; color:#ea574e; background:#fbeeec}
+
+@media (max-width:1020px) {
+    .cabinet-content > .profile-btn {width:calc(50% - 12px); margin:0 6px 10px 0; white-space:nowrap}
+}
 
 .cabinet-expert-requests-score {font-size:18px; font-weight:500; line-height:27px; padding:0 0 0 24px; width:100px; text-align:left; box-sizing:border-box; background:url(../images/cabinet-expert-requests-score.svg) no-repeat left 5px; color:#2f2f2f}
 
@@ -310,9 +322,10 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .expert-request-header-info-status {float:left; margin:-6px 0 0 20px}
 
 @media (max-width:1020px) {
-    .expert-request-header {padding:0; margin:35px 0 35px 0}
+    .expert-request-header {padding:0; margin:0 0 35px 0}
     .expert-request-header-back {display:none}
     .expert-request-header-title {font-size:20px; line-height:23px}
+    .expert-request-header h1 {font-size:26px; line-height:30px}
     .expert-request-header-info-status {width:100%; margin:14px 0 0 0}
     .expert-request-header-info-status .cabinet-riepp-requests-status {position:relative; left:auto; top:auto}
 }
@@ -664,27 +677,73 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .cabinet-content-header .pager {float:right; margin:0}
 .cabinet-content-header-btn {float:left}
 
+@media (max-width:1020px) {
+    .no-mobile {display:none !important}
+    .no-mobile+td {margin-top:0 !important; padding-top:0 !important}
+    .cabinet-content-header-btn {width:100%}
+    h2+.cabinet-content-header-btn {margin:24px 0 0 0}
+    .cabinet-content-header-btn .profile-btn {margin:0}
+    .cabinet-content-header:first-child {padding:0}
+
+    .tabs__content th {display:none}
+}
+
 .entry .cabinet-content table tr td.cabinet-projects-list-title {font-size:18px; line-height:25px; padding:31px 30px 21px 30px; border-bottom:none}
 .entry .cabinet-content table tr td.cabinet-projects-list-title a {color:#d52e23}
 .entry .cabinet-content table tr:hover td.cabinet-projects-list-title {background:transparent}
+.entry .cabinet-content table tr.cabinet-projects-list-props {border-bottom:1px solid #e1e1e1}
 .entry .cabinet-content table tr.cabinet-projects-list-props td {border-top:none; border-bottom:none; padding-top:0; padding-bottom:30px; color:#737373; line-height:21px; position:relative}
 .entry .cabinet-content table tr.cabinet-projects-list-props td:nth-child(1) {white-space:nowrap}
 .entry .cabinet-content table tr.cabinet-projects-list-props td::before {content:""; display:block; position:absolute; left:-1px; bottom:0; width:1px; height:30px; background:#fff}
 .entry .cabinet-content table tr.cabinet-projects-list-props td:first-child::before {display:none}
 .entry .cabinet-content table tr.cabinet-projects-list-props:hover td {background:transparent}
+.table-projects-mobile-header {display:none}
+
+@media (max-width:1020px) {
+    .entry .cabinet-content table.table-projects {border-bottom:1px solid #e1e1e1}
+    .entry .cabinet-content table tr {border-bottom:none; padding-bottom:0; margin-bottom:0}
+    .entry .cabinet-content table tr.cabinet-projects-list-props {border-top:none; border-bottom:none; margin-bottom:0; padding-top:0; padding-bottom:46px}
+    .entry .cabinet-content table tr.cabinet-projects-list-props td {display:block !important; float:none !important; margin:0 !important; padding:23px 0 0 0 !important; font-size:18px !important; line-height:27px !important; color:#000 !important; padding-bottom:0 !important; font-weight:500 !important}
+    .entry .cabinet-content table tr.cabinet-projects-list-props td::before {display:none}
+    .table-projects-mobile-header {display:block; font-size:16px; line-height:19px; color:#737373; padding:0 0 8px 0; font-weight:normal}
+}
 
 .entry .cabinet-content .table_container_detail table td {line-height:24px; color:#141414; padding-top:15px; padding-bottom:13px}
 .entry .cabinet-content .table_container_detail table td:first-child {width:40%; color:#555; line-height:19px; padding-top:17px; padding-bottom:15px}
 
+@media (max-width:1020px) {
+    .entry .cabinet-content .table_container_detail table {border-bottom:1px solid #e1e1e1}
+    .entry .cabinet-content .table_container_detail table tr {padding:26px 25px 0 25px}
+    .entry .cabinet-content .table_container_detail table td {font-size:20px; line-height:30px; color:#000; padding:6px 0 22px 0 !important; margin:0 !important}
+    .entry .cabinet-content .table_container_detail table td:first-child {width:auto; color:#737373; font-size:16px; line-height:19px; padding:0 !important; font-weight:normal !important}
+}
+
 .entry .cabinet-content table.table-profile-dashboard td {padding-top:20px; padding-bottom:18px}
 .entry .cabinet-content table.table-profile-dashboard td:last-child {padding-top:15px; padding-bottom:13px}
+.table-profile-dashboard-item-prop-title {display:none}
+
+@media (max-width:1020px) {
+    .entry .cabinet-content table.table-profile-dashboard tr {position:relative; padding:73px 25px 30px 25px}
+    .entry .cabinet-content table.table-profile-dashboard tr::after {content:""; display:block; clear:both}
+    .entry .cabinet-content table.table-profile-dashboard tr td.table-profile-dashboard-item-title {display:block; padding-top:0; padding-bottom:24px; font-size:20px; line-height:30px}
+    .entry .cabinet-content table.table-profile-dashboard tr td.table-profile-dashboard-item-prop {padding:0 18px; display:block; float:left; width:33.33%; border-left:1px solid #e1e1e1; border-right:1px solid #e1e1e1; margin:0 -1px 0 0; box-sizing:border-box; font-size:18px; line-height:27px; font-weight:500; color:#000}
+    .entry .cabinet-content table.table-profile-dashboard tr td.table-profile-dashboard-item-title+td.table-profile-dashboard-item-prop {border-left:none; padding-left:0}
+    .entry .cabinet-content table.table-profile-dashboard tr td.table-profile-dashboard-item-prop+td.table-profile-dashboard-item-prop+td.table-profile-dashboard-item-prop {border-right:none; padding-right:0}
+    .table-profile-dashboard-item-prop-title {display:block; font-weight:normal; font-size:16px; line-height:19px; color:#737373; min-height:38px; margin:0 0 10px 0}
+}
 
 .entry .cabinet-content table.table_edit td {line-height:24px; color:#141414; padding:20px 30px}
 .entry .cabinet-content table.table_edit td:first-child {width:40%; color:#555; padding:30px}
 
+@media (max-width:1020px) {
+    .entry .cabinet-content table.table_edit td {padding:0 5px 20px 5px}
+    .entry .cabinet-content table.table_edit td:first-child {width:auto; color:#737373; font-size:16px; line-height:19px; font-weight:normal; padding:0 5px 16px 5px}
+}
+
 .cabinet-list-item-del {display:inline-block; vertical-align:middle; width:22px; height:22px; background:url(../images/btn-remove.svg) no-repeat; margin:0 13px 0 0}
 .cabinet-list-item-edit {display:inline-block; vertical-align:middle; width:22px; height:22px; background:url(../images/btn-edit.svg) no-repeat; margin:0 13px 0 0}
 
+.table_edit {border-bottom:1px solid #e1e1e1}
 .table_edit .riepp-request-affiliated-select {width:406px}
 .table_edit .riepp-request-affiliated-select-value {background:rgba(234, 87, 78, 0.04); box-sizing:border-box; height:39px; border:1px solid rgba(234, 87, 78, 0.42); color:#000; padding:7px 57px 6px 12px; font:300 16px/24px Roboto, sans-serif}
 .table_edit .riepp-request-affiliated-select-value::after {right:19px; top:15px}
@@ -695,11 +754,54 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
 .table_edit .riepp-request-affiliated-select-list label input:checked+span::after {right:10px; top:14px; width:25px; height:25px; border:1px solid #ea574e; border-radius:50%; background:url(../images/window-checked.svg) no-repeat center; margin:0}
 .table_edit .riepp-request-affiliated-select-list label input[type="radio"]:checked+span::after {display:none}
 
+@media (max-width:1020px) {
+    .table_edit .riepp-request-affiliated-select {width:100%}
+    .table_edit .riepp-request-affiliated-select-value {height:58px; font-size:20px; line-height:23px; padding:16px 57px 17px 19px; font-weight:normal}
+    .table_edit .riepp-request-affiliated-select-value::after {right:16px; top:23px; background:url(../images/riepp-request-affiliated-select-value-mobile.svg) no-repeat; width:17px; height:10px}
+    .table_edit .riepp-request-affiliated-select-list label span {font-size:20px; line-height:23px; padding:16px 45px 17px 19px}
+    .entry .cabinet-content table.table_edit tr td:last-child {margin-top:16px}
+}
+
 .table_edit .inp {background:rgba(234, 87, 78, 0.04); height:39px; box-sizing:border-box; width:406px; border:1px solid rgba(234, 87, 78, 0.42); color:#000; padding:7px 12px 6px 12px; font:300 16px/24px Roboto, sans-serif}
 .input-date {display:block; position:relative; width:161px}
 .table_edit .input-date .inp {width:100%; padding-right:45px}
 .input-date::after {content:""; display:bock; position:absolute; right:20px; top:11px; width:15px; height:15px; background:url(../images/input-date.svg) no-repeat; pointer-events:none}
 
+@media (max-width:1020px) {
+    .table_edit .inp {width:100%; height:58px; font-size:20px; line-height:23px; font-weight:normal; padding:16px 19px 17px 19px}
+    .input-date {width:100%}
+    .input-date::after {right:19px; top:15px; width:25px; height:25px; background-size:100%}
+}
+
 .tabs .cabinet-content {position:relative}
 .tabs__content {width:100%; position:absolute; left:-9999px; top:-9999px; opacity:0; transition:opacity 0.3s}
 .tabs__content.active {position:relative; left:auto; top:auto; opacity:1}
+.tabs__current {display:none}
+.tabs-item-title {display:none}
+
+@media (max-width:1020px) {
+    .tabs {margin:56px -20px 0 -20px; background:#fff; padding:37px 20px 0 20px}
+    .tabs__content thead {display:none}
+    .request_tabs {position:relative}
+    .tabs-menu-open  .request_tabs{z-index:999}
+    .tabs__current {display:block; border:1px solid #DFDFDF; border-radius:3px; box-sizing:border-box; height:59px; font-size:22px; line-height:57px; color:#EA574E; padding:0 0 0 20px; position:relative}
+    .tabs__current::after {content:""; display:block; width:19px; height:11px; background:url(../images/tabs_current.svg) no-repeat; position:absolute; right:15px; top:22px}
+    .tabs__caption {display:none}
+    .tabs-menu-open .tabs__caption {display:block; position:absolute; left:0; top:100%; width:100%; background:#fff; border:1px solid #d7d7d7; box-sizing:border-box}
+    .request_tabs ul li {float:none; border-top:1px solid #D7D7D7; margin:0; padding:0; padding:15px 20px 16px 20px; color:#717171; font-size:16px; line-height:19px}
+    .request_tabs ul li:first-child {border-top:none}
+    .request_tabs ul li.active {color:#000}
+    .request_tabs ul li.active::after {display:none}
+    .request_tabs {margin:0 0 36px 0; border-bottom:none}
+    .tabs .cabinet {margin:0; padding:0 0 60px 0}
+    .tabs-item-title {display:block; font-size:16px; line-height:19px; color:#737373; font-weight:normal; padding:0 0 6px 0}
+    .entry .tabs .cabinet-content table {border-bottom:1px solid #e1e1e1}
+    .entry .tabs .cabinet-content table tr td {display:block; padding:17px 5px 0 5px; font-size:20px; line-height:30px; color:#000}
+    .entry .tabs .cabinet-content table tr td:first-child {padding-top:0}
+    .entry .tabs .cabinet-content table tr td:last-child {border-top:1px solid #e1e1e1; margin:17px 5px 0 5px; padding:0 0 22px 0}
+    .entry .tabs .cabinet-content table tr td:last-child::after {content:""; display:block; clear:both}
+    .entry .tabs .cabinet-content table tr td:last-child .tabs-item-title {float:left; margin:27px 0 0 0}
+    .tabs-item-ctrl {float:right; margin:18px 0 0 0}
+    .cabinet-list-item-del {width:36px; height:36px; background:url(../images/btn-remove-mobile.svg) no-repeat; margin:0}
+    .cabinet-list-item-edit {width:35px; height:35px; background:url(../images/btn-edit-mobile.svg) no-repeat; margin:0 25px 0 0}
+}

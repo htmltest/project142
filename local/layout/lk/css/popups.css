@@ -6,19 +6,42 @@
 .window-close {right:40px; top:17px; width:34px; height:34px; border-radius:50%; background:#ea574e url(../images/window-close.svg) no-repeat center}
 .window-close:hover {background-position:center}
 
+@media (max-width:1020px) {
+    .window-container {width:440px}
+    .window-close {right:20px; top:12px; width:44px; height:44px}
+}
+
 .window-title {background:#fceae7; color:#1d1d1d; font-size:20px; line-height:23px; letter-spacing:0.03em; font-weight:normal; padding:24px 114px 22px 40px}
+
+@media (max-width:1020px) {
+    .window-title {padding-left:20px; padding-right:64px; font-size:22px; line-height:26px}
+}
 
 .window form {margin:0; padding:13px 40px 38px 40px}
 .window-label {margin:20px 0 0 0; font-size:16px; line-height:19px; color:#848484; font-weight:normal}
 .window-field {margin:8px 0 0 0}
 
+@media (max-width:1020px) {
+    .window form {margin:0; padding:13px 20px 38px 20px}
+    .window-label {font-size:18px; line-height:21px}
+}
+
 .window-input input {vertical-align:top; box-sizing:border-box; margin:0; padding:16px 20px; outline:none; width:100%; height:54px; border:1px solid #d7d7d7; -webkit-appearance:none; background:#fff; color:#000; font:16px/20px Roboto, sans-serif; border-radius:0}
 .window-input input:-webkit-autofill {-webkit-animation-name:autofill; -webkit-animation-fill-mode:both}
 @-webkit-keyframes autofill {to {color:#000; background:transparent}}
 
+@media (max-width:1020px) {
+    .window-input input {font-size:19px; line-height:24px; height:58px}
+}
+
 .window-submit {margin:20px 0 0 0}
 .window-submit input {display:block; margin:0; padding:0; overflow:visible; outline:none; vertical-align:top; width:100%; height:54px; text-decoration:none; background:#fff; color:#ea574e; border:1px solid #ea574e; border-radius:0; font:500 16px/52px Roboto, sans-serif; letter-spacing:0.05em; text-align:center; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase; transition:all 0.2s}
 .window-submit input:hover {background:#ea574e; color:#fff}
+
+@media (max-width:1020px) {
+    .window-submit {margin:29px 0 0 0}
+    .window-submit input {height:58px; line-height:58px}
+}
 
 .window .riepp-request-affiliated-select-value {background:#fff; height:54px; border:1px solid #d7d7d7; color:#000; padding:16px 57px 16px 20px; font:16px/20px Roboto, sans-serif}
 .window .riepp-request-affiliated-select-value::after {width:17px; height:10px; background:url(../images/window-select.svg) no-repeat; right:19px; top:21px}
@@ -29,5 +52,14 @@
 .window .riepp-request-affiliated-select-list label input:checked+span::after {right:10px; top:14px; width:25px; height:25px; border:1px solid #ea574e; border-radius:50%; background:url(../images/window-checked.svg) no-repeat center; margin:0}
 .window .riepp-request-affiliated-select-list label input[type="radio"]:checked+span::after {display:none}
 
+@media (max-width:1020px) {
+    .window .riepp-request-affiliated-select-value {height:58px; font-size:19px; line-height:24px}
+    .window .riepp-request-affiliated-select-list label span {font-size:19px; line-height:22px}
+}
+
 .message-success {margin:20px 0 0 0; font-size:16px; line-height:57px; height:57px; text-align:center; color:#006416; border-radius:3px; background:rgba(173, 255, 186, 0.55); font-weight:normal}
 .message-success::before {content:""; display:inline-block; vertical-align:middle; width:25px; height:25px; border-radius:50%; margin:-2px 10px 0 0; background:#14df33 url(../images/window-success.svg) no-repeat center}
+
+@media (max-width:1020px) {
+    .message-success {font-size:18px}
+}

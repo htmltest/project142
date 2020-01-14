@@ -73,15 +73,23 @@ blockquote.time_info{ padding: 20px 50px; border-top: 5px solid #f5d008; backgro
 .cabinet-menu div a:hover{color: #ca3c33}
 .cabinet-menu .active a{color: #ca3c33; font-weight: 500}
 
+@media (max-width:1020px) {
+    .mobile-menu-open {height:auto; overflow:hidden}
+    .mobile-menu-open body {overflow:hidden}
+    .cabinet-menu {display:none}
+    .mobile-menu-open .cabinet-menu {position:fixed; right:0; top:0; bottom:0; overflow:auto; z-index:998; background:#fff; width:364px; height:auto; border-bottom:none; padding:51px 35px 54px 40px}
+    .mobile-menu-open .wrap_h::after {content:""; display:block; position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0, 0, 0, 0.23); z-index:888}
+    .mobile-menu-open .cabinet-menu {display:block}
+    .mobile-menu-open .cabinet-menu div {float:none; border-right:none; padding:36px 0 0 0}
+    .mobile-menu-open .cabinet-menu div a {font-size:24px; line-height:36px; padding:0}
+    .mobile-menu-open .cabinet-menu div:last-child {margin:40px 0 0 0; border-top:1px solid #BCBCBC; padding-top:30px}
+    .mobile-menu-open .cabinet-menu div:last-child a::after {content:""; display:inline-block; vertical-align:middle; width:22px; height:22px; background:url(../images/cabinet-menu-exit.svg) no-repeat; margin:-2px 0 0 19px}
+}
+
 .cabinet-container{margin: 0}
 
 .p_nav a {background: #bbeaff}
 .p_nav a:hover {background: #a1dffb}
-
-@media (max-width:1232px) {
-	.cabinet .cabinet-menu{height: 50px;}
-	.cabinet-menu div a{line-height: 50px; padding: 0 15px;}
-}
 
 .inp.mselect{height: auto; overflow: auto; width: 100%}
 .inp.mselect option{white-space: normal; padding: 3px 0 3px 0}

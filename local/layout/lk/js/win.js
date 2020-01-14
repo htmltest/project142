@@ -12,6 +12,8 @@ jQuery(document).ready(function($) {
 		$(this)
 		.addClass('active').siblings().removeClass('active')
 		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        $('.tabs-menu-open').removeClass('tabs-menu-open');
+        $('.tabs__current').html($(this).html());
 	});
 
 	// Табы
@@ -161,7 +163,7 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    
+
     $('.input-date input').attr('autocomplete', 'off');
     $('.input-date input').mask('00.00.0000');
 
@@ -225,7 +227,47 @@ jQuery(document).ready(function($) {
         e.preventDefault();
     });
 
+    $('.show_nav').click(function(e) {
+        $('html').toggleClass('mobile-menu-open');
+    });
+
+    $('.tabs__current').click(function(e) {
+        $('.tabs').toggleClass('tabs-menu-open');
+    });
+
+    $(document).click(function(e) {
+        if ($(e.target).parents().filter('.request_tabs').length == 0) {
+            $('.tabs').removeClass('tabs-menu-open');
+        }
+    })
+
 });//jQuery
+
+$(window).on('load resize', function() {
+
+    if ($(window).width() > 1199) {
+        $('.footer-logos .wrap').each(function() {
+            var curList = $(this);
+            if (curList.hasClass('slick-slider')) {
+                curList.slick('unslick');
+            }
+        });
+    } else {
+        $('.footer-logos .wrap').each(function() {
+            var curList = $(this);
+            if (!curList.hasClass('slick-slider')) {
+                curList.slick({
+                    infinite: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows: false,
+                    dots: true
+                });
+            }
+        });
+    }
+
+});
 
 function upd_span(href, name){
     jQuery(document).ready(function($) {
