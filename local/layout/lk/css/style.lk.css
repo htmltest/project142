@@ -69,12 +69,15 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .cabinet {margin:32px -20px 0 -20px; padding:40px 20px 66px 20px}
 }
 
-.table_container {margin:37px 0 0 0}
+.table_container {margin:37px 0 0 0; position:relative}
 .cabinet-content {float:none; margin:0; width:auto}
 .cabinet-content form {margin:0; padding:0}
 
+.table_container .pager {position:absolute; right:0; top:-80px; margin:0}
+
 @media (max-width:1020px) {
     .table_container {margin:32px 0 0 0}
+    .table_container .pager {position:relative; right:auto; top:auto; margin:40px 0 0 0; text-align:center}
 }
 
 .entry .cabinet-content table {margin:0; width:100%}
