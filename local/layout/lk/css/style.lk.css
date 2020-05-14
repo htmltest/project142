@@ -809,3 +809,15 @@ blockquote.success_info p b {font-weight:normal; color:#4e4e4e}
     .cabinet-list-item-del {width:36px; height:36px; background:url(../images/btn-remove-mobile.svg) no-repeat; margin:0}
     .cabinet-list-item-edit {width:35px; height:35px; background:url(../images/btn-edit-mobile.svg) no-repeat; margin:0 25px 0 0}
 }
+
+.form-select,
+.form-select-ajax {text-align:left}
+.form-select select,
+.form-select-ajax select {width:100%}
+.table_edit .form-select,
+.table_edit .form-select-ajax {width:406px}
+
+@media (max-width:1020px) {
+    .table_edit .form-select,
+    .table_edit .form-select-ajax {width:100%}
+}
